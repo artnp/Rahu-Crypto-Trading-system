@@ -465,11 +465,48 @@ var x = setInterval(function() {
 
 function lunar(){
 var countDownDate = new Date("May 5, 2023 00:00:00").getTime();
+if (new Date().getMonth() === 5 && new Date().getDate() === 6 && new Date().getFullYear() === 2023){
+countDownDate = new Date("October 28, 2023 00:00:00").getTime();
+} else if (new Date().getMonth() === 10 && new Date().getDate() === 29 && new Date().getFullYear() === 2023){
+countDownDate = new Date("March 25, 2024 00:00:00").getTime();
+} else if (new Date().getMonth() === 3 && new Date().getDate() === 26 && new Date().getFullYear() === 2024){
+countDownDate = new Date("September 18, 2024 00:00:00").getTime();
+} else if (new Date().getMonth() === 9 && new Date().getDate() === 19 && new Date().getFullYear() === 2024){
+countDownDate = new Date("March 14, 2025 00:00:00").getTime();
+} else if (new Date().getMonth() === 3 && new Date().getDate() === 15 && new Date().getFullYear() === 2025){
+countDownDate = new Date("September 7, 2025 00:00:00").getTime();
+} else if (new Date().getMonth() === 9 && new Date().getDate() === 8 && new Date().getFullYear() === 2025){
+countDownDate = new Date("March 3, 2026 00:00:00").getTime();
+} else if (new Date().getMonth() === 3 && new Date().getDate() === 4 && new Date().getFullYear() === 2026){
+countDownDate = new Date("August 28, 2026 00:00:00").getTime();
+} else if (new Date().getMonth() === 8 && new Date().getDate() === 29 && new Date().getFullYear() === 2026){
+countDownDate = new Date("February 20, 2027 00:00:00").getTime();
+} else if (new Date().getMonth() === 2 && new Date().getDate() === 22 && new Date().getFullYear() === 2027){
+countDownDate = new Date("August 17, 2027 00:00:00").getTime();
+} else if (new Date().getMonth() === 8 && new Date().getDate() === 18 && new Date().getFullYear() === 2027){
+countDownDate = new Date("January 12, 2028 00:00:00").getTime();
+} else if (new Date().getMonth() === 1 && new Date().getDate() === 13 && new Date().getFullYear() === 2028){
+countDownDate = new Date("July 6, 2028 00:00:00").getTime();
+} else if (new Date().getMonth() === 7 && new Date().getDate() === 7 && new Date().getFullYear() === 2028){
+countDownDate = new Date("December 31, 2028 00:00:00").getTime();
+} else if (new Date().getMonth() === 1 && new Date().getDate() === 1 && new Date().getFullYear() === 2029){
+countDownDate = new Date("June 26, 2029 00:00:00").getTime();
+} else if (new Date().getMonth() === 6 && new Date().getDate() === 27 && new Date().getFullYear() === 2029){
+countDownDate = new Date("December 20, 2029 00:00:00").getTime();
+} else if (new Date().getMonth() === 12 && new Date().getDate() === 22 && new Date().getFullYear() === 2029){
+countDownDate = new Date("June 15, 2030 00:00:00").getTime();
+} else if (new Date().getMonth() === 6 && new Date().getDate() === 16 && new Date().getFullYear() === 2030){
+countDownDate = new Date("December 9, 2030 00:00:00").getTime();
+} else if (new Date().getMonth() === 12 && new Date().getDate() === 11 && new Date().getFullYear() === 2030){
+countDownDate = new Date("May 7, 2031 00:00:00").getTime();
+} else if (new Date().getMonth() === 5 && new Date().getDate() === 8 && new Date().getFullYear() === 2031){
+countDownDate = new Date("June 5, 2031 00:00:00").getTime();
+} else if (new Date().getMonth() === 6 && new Date().getDate() === 6 && new Date().getFullYear() === 2031){
+countDownDate = new Date("October 30, 2031 00:00:00").getTime();
+}
 var x = setInterval(function() {
 
-  // Get today's date and time
   var now = new Date().getTime();
-
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -479,7 +516,7 @@ var x = setInterval(function() {
   document.getElementById("lunar").innerHTML = days
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("lunar").innerHTML = "EXPIRED";
+    document.getElementById("lunar").innerHTML = "Eclipsing";
   }
 });
 }
