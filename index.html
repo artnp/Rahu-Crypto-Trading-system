@@ -6,6 +6,7 @@
 <style>
 body {
   background-color: black;
+  color: white;
 }
 .tabbing {
 margin-right:20em
@@ -13,8 +14,30 @@ margin-right:20em
 </style>
 </head>
 <body>
-<center><br><form>
-<table class="table table-dark">
+<center><br>
+  <table class="table-bordered">
+    <thead>
+      <tr>
+        <th scope="col"><center>[ <font color="orange">Solar Eclipse</font> ]</center></th>
+        <th scope="col"><center>[ <font color="red">Lunar Eclipse</font> ]</center></th>
+        <th scope="col"><center>[ <font color="blood">Mercury Retrograde</font> ]</center></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><center><h1><p id="solar"></p></h1></center></td>
+        <td><center><h1><p id="lunar"></p></h1></center></td>
+        <td><center><h1><p id="mercury"></p></h1></center></td>
+      </tr>
+  
+    </tbody>
+  </table>
+<br>
+<a class="btn btn-primary" href="#"  target="popup" 
+onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','width=1600,height=900'); return false;">Crypto Pairs Screener</a><br>
+
+  <br><form>
+<table class="table table-striped table-dark">
   <thead>
     <tr>
     <th scope="col">#</th>
@@ -49,7 +72,7 @@ margin-right:20em
       <td><div id="Valuedot"></div></td>
       <td><div id="Percentdot"></div></td>
       <td><div id="Profitdot"></div></td>
-      <td><button type="button" class="btn btn-info btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3ADOTBUSD','popup','width=1600,height=900')">Tradingview</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3ADOTBUSD','popup','width=1600,height=900')">Tradingview</button></td>
     </tr>
     <tr>
       <th scope="row">3</th>
@@ -71,7 +94,7 @@ margin-right:20em
       <td><div id="Valueuni"></div></td>
       <td><div id="Percentuni"></div></td>
       <td><div id="Profituni"></div></td>
-      <td><button type="button" class="btn btn-info btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3AUNIBUSD','popup','width=1600,height=900')">Tradingview</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3AUNIBUSD','popup','width=1600,height=900')">Tradingview</button></td>
     </tr>
 	    <tr>
       <th scope="row">5</th>
@@ -92,7 +115,7 @@ margin-right:20em
       <td><div id="Valuelunc"></div></td>
       <td><div id="Percentlunc"></div></td>
       <td><div id="Profitlunc"></div></td>
-      <td><button type="button" class="btn btn-info btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3ALUNCBUSD','popup','width=1600,height=900')">Tradingview</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3ALUNCBUSD','popup','width=1600,height=900')">Tradingview</button></td>
     </tr>
 	      <th scope="row">7</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/doge.png" width="2%"> DOGE</td>
@@ -112,7 +135,7 @@ margin-right:20em
       <td><div id="Valuexrp"></div></td>
       <td><div id="Percentxrp"></div></td>
       <td><div id="Profitxrp"></div></td>
-      <td><button type="button" class="btn btn-info btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3AXRPBUSD','popup','width=1600,height=900')">Tradingview</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/H5sue6RV/?symbol=BINANCE%3AXRPBUSD','popup','width=1600,height=900')">Tradingview</button></td>
     </tr>
 	      <th scope="row">9</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/sol.png" width="2%"> SOL</td>
@@ -130,9 +153,8 @@ margin-right:20em
 <p style="text-align:right;"><button type="button" class="save" style="font-size:12pt;height:30px;width:130px;">save data</button></p>
 </div>
 </form>
-<br>
-<a class="btn btn-primary" href="#"  target="popup" 
-onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','width=1600,height=900'); return false;">Crypto Pairs Screener</a>
+
+
 
 </center>
 
@@ -201,24 +223,24 @@ Investlunc = (localStorage.getItem("Investlunc"))
 Investdoge = (localStorage.getItem("Investdoge"))
 Investxrp = (localStorage.getItem("Investxrp"))
 Investsol = (localStorage.getItem("Investsol"))
-document.getElementById("Amountbtc").setAttribute('value' , Amountbtc )
-document.getElementById("Amountdot").setAttribute('value' , Amountdot )
-document.getElementById("Amounteth").setAttribute('value' , Amounteth )
-document.getElementById("Amountuni").setAttribute('value' , Amountuni )
-document.getElementById("Amountxec").setAttribute('value' , Amountxec )
-document.getElementById("Amountlunc").setAttribute('value' , Amountlunc )
-document.getElementById("Amountdoge").setAttribute('value' , Amountdoge )
-document.getElementById("Amountxrp").setAttribute('value' , Amountxrp )
-document.getElementById("Amountsol").setAttribute('value' , Amountsol )
-document.getElementById("Investbtc").setAttribute('value' , Investbtc )
-document.getElementById("Investdot").setAttribute('value' , Investdot )
-document.getElementById("Investeth").setAttribute('value' , Investeth )
-document.getElementById("Investuni").setAttribute('value' , Investuni )
-document.getElementById("Investxec").setAttribute('value' , Investxec )
-document.getElementById("Investlunc").setAttribute('value' , Investlunc )
-document.getElementById("Investdoge").setAttribute('value' , Investdoge )
-document.getElementById("Investxrp").setAttribute('value' , Investxrp )
-document.getElementById("Investsol").setAttribute('value' , Investsol )
+document.getElementById("Amountbtc").setAttribute('value' , Amountbtc||0 )
+document.getElementById("Amountdot").setAttribute('value' , Amountdot||0 )
+document.getElementById("Amounteth").setAttribute('value' , Amounteth||0 )
+document.getElementById("Amountuni").setAttribute('value' , Amountuni||0 )
+document.getElementById("Amountxec").setAttribute('value' , Amountxec||0 )
+document.getElementById("Amountlunc").setAttribute('value' , Amountlunc||0 )
+document.getElementById("Amountdoge").setAttribute('value' , Amountdoge||0 )
+document.getElementById("Amountxrp").setAttribute('value' , Amountxrp||0 )
+document.getElementById("Amountsol").setAttribute('value' , Amountsol||0 )
+document.getElementById("Investbtc").setAttribute('value' , Investbtc||0 )
+document.getElementById("Investdot").setAttribute('value' , Investdot||0 )
+document.getElementById("Investeth").setAttribute('value' , Investeth||0 )
+document.getElementById("Investuni").setAttribute('value' , Investuni||0 )
+document.getElementById("Investxec").setAttribute('value' , Investxec||0 )
+document.getElementById("Investlunc").setAttribute('value' , Investlunc||0 )
+document.getElementById("Investdoge").setAttribute('value' , Investdoge||0 )
+document.getElementById("Investxrp").setAttribute('value' , Investxrp||0 )
+document.getElementById("Investsol").setAttribute('value' , Investsol||0 )
 
 
   const getbtc = async () => {
@@ -237,7 +259,7 @@ document.getElementById("Investsol").setAttribute('value' , Investsol )
     }
     document.getElementById("Profitbtc").innerHTML = profit
     document.getElementById("Valuebtc").innerHTML = (price*Amountbtc).toFixed(0)+"$"
-    document.getElementById("Percentbtc").innerHTML = "<u>"+((((price*Amountbtc)*100)/Investbtc)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentbtc").innerHTML = "<u>"+((((price*Amountbtc)*100)/Investbtc)-100||0).toFixed(0)+"%</u>"
 });
 }
 const getdot = async () => {
@@ -256,7 +278,7 @@ const getdot = async () => {
     }
     document.getElementById("Profitdot").innerHTML = profit
     document.getElementById("Valuedot").innerHTML = (price*Amountdot).toFixed(0)+"$"
-    document.getElementById("Percentdot").innerHTML = "<u>"+((((price*Amountdot)*100)/Investdot)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentdot").innerHTML = "<u>"+((((price*Amountdot)*100)/Investdot)-100||0).toFixed(0)+"%</u>"
 });
 }
 const geteth = async () => {
@@ -275,7 +297,7 @@ const geteth = async () => {
     }
     document.getElementById("Profiteth").innerHTML = profit
     document.getElementById("Valueeth").innerHTML = (price*Amounteth).toFixed(0)+"$"
-    document.getElementById("Percenteth").innerHTML = "<u>"+((((price*Amounteth)*100)/Investeth)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percenteth").innerHTML = "<u>"+((((price*Amounteth)*100)/Investeth)-100||0).toFixed(0)+"%</u>"
 });
 }
 const getuni = async () => {
@@ -294,7 +316,7 @@ const getuni = async () => {
     }
     document.getElementById("Profituni").innerHTML = profit
     document.getElementById("Valueuni").innerHTML = (price*Amountuni).toFixed(0)+"$"
-    document.getElementById("Percentuni").innerHTML = "<u>"+((((price*Amountuni)*100)/Investuni)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentuni").innerHTML = "<u>"+((((price*Amountuni)*100)/Investuni)-100||0).toFixed(0)+"%</u>"
 });
 }
 const getxec = async () => {
@@ -313,7 +335,7 @@ const getxec = async () => {
     }
     document.getElementById("Profitxec").innerHTML = profit
     document.getElementById("Valuexec").innerHTML = (price*Amountxec).toFixed(0)+"$"
-    document.getElementById("Percentxec").innerHTML = "<u>"+((((price*Amountxec)*100)/Investxec)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentxec").innerHTML = "<u>"+((((price*Amountxec)*100)/Investxec)-100||0).toFixed(0)+"%</u>"
 });
 }
 const getlunc = async () => {
@@ -332,7 +354,7 @@ const getlunc = async () => {
     }
     document.getElementById("Profitlunc").innerHTML = profit
     document.getElementById("Valuelunc").innerHTML = (price*Amountlunc).toFixed(0)+"$"
-    document.getElementById("Percentlunc").innerHTML = "<u>"+((((price*Amountlunc)*100)/Investlunc)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentlunc").innerHTML = "<u>"+((((price*Amountlunc)*100)/Investlunc)-100||0).toFixed(0)+"%</u>"
 });
 }
 const getdoge = async () => {
@@ -351,7 +373,7 @@ const getdoge = async () => {
     }
     document.getElementById("Profitdoge").innerHTML = profit
     document.getElementById("Valuedoge").innerHTML = (price*Amountdoge).toFixed(0)+"$"
-    document.getElementById("Percentdoge").innerHTML = "<u>"+((((price*Amountdoge)*100)/Investdoge)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentdoge").innerHTML = "<u>"+((((price*Amountdoge)*100)/Investdoge)-100||0).toFixed(0)+"%</u>"
 });
 }
 const getxrp = async () => {
@@ -370,7 +392,7 @@ const getxrp = async () => {
     }
     document.getElementById("Profitxrp").innerHTML = profit
     document.getElementById("Valuexrp").innerHTML = (price*Amountxrp).toFixed(0)+"$"
-    document.getElementById("Percentxrp").innerHTML = "<u>"+((((price*Amountxrp)*100)/Investxrp)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentxrp").innerHTML = "<u>"+((((price*Amountxrp)*100)/Investxrp)-100||0).toFixed(0)+"%</u>"
 });
 }
 const getsol = async () => {
@@ -389,7 +411,7 @@ const getsol = async () => {
     }
     document.getElementById("Profitsol").innerHTML = profit
     document.getElementById("Valuesol").innerHTML = (price*Amountsol).toFixed(0)+"$"
-    document.getElementById("Percentsol").innerHTML = "<u>"+((((price*Amountsol)*100)/Investsol)-100|| 0).toFixed(0)+"%</u>"
+    document.getElementById("Percentsol").innerHTML = "<u>"+((((price*Amountsol)*100)/Investsol)-100||0).toFixed(0)+"%</u>"
 });
 }
 
@@ -408,6 +430,71 @@ tcount=setInterval(function(){
   if (tcount==10) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol(); tcount=0}
 },1000);
 
+function solar(){
+var countDownDate = new Date("April 20, 2023 00:00:00").getTime();
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("solar").innerHTML = days
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("solar").innerHTML = "EXPIRED";
+  }
+});
+}
+
+function lunar(){
+var countDownDate = new Date("May 5, 2023 00:00:00").getTime();
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("lunar").innerHTML = days
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("lunar").innerHTML = "EXPIRED";
+  }
+});
+}
+
+function mercury(){
+var countDownDate = new Date("December 29, 2022 00:00:00").getTime();
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("mercury").innerHTML = days
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("mercury").innerHTML = "Retrograding";
+  }
+});
+}
+solar()
+lunar()
+mercury()
 
 </script>
 </body>
