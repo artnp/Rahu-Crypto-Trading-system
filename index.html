@@ -485,7 +485,56 @@ var x = setInterval(function() {
 }
 
 function mercury(){
-var countDownDate = new Date("December 29, 2022 00:00:00").getTime();
+countDownDate = new Date("December 29, 2022 00:00:00").getTime();
+if (new Date().getMonth() === 1 && new Date().getDate() === 19 && new Date().getFullYear() === 2023){
+countDownDate = new Date("April 21, 2023 00:00:00").getTime();
+} else if (new Date().getMonth() === 5 && new Date().getDate() === 15 && new Date().getFullYear() === 2023){
+countDownDate = new Date("December 13, 2023 00:00:00").getTime();
+} else if (new Date().getMonth() === 1 && new Date().getDate() === 2 && new Date().getFullYear() === 2024){
+countDownDate = new Date("April 1, 2024 00:00:00").getTime();
+} else if (new Date().getMonth() === 4 && new Date().getDate() === 26 && new Date().getFullYear() === 2024){
+countDownDate = new Date("August 4, 2024 00:00:00").getTime();
+} else if (new Date().getMonth() === 8 && new Date().getDate() === 29 && new Date().getFullYear() === 2024){
+countDownDate = new Date("November 25, 2024 00:00:00").getTime();
+} else if (new Date().getMonth() === 12 && new Date().getDate() === 16 && new Date().getFullYear() === 2024){
+countDownDate = new Date("March 14, 2025 00:00:00").getTime();
+} else if (new Date().getMonth() === 4 && new Date().getDate() === 8 && new Date().getFullYear() === 2025){
+countDownDate = new Date("July 17, 2025 00:00:00").getTime();
+} else if (new Date().getMonth() === 8 && new Date().getDate() === 12 && new Date().getFullYear() === 2025){
+countDownDate = new Date("November 9, 2025 00:00:00").getTime();
+} else if (new Date().getMonth() === 11 && new Date().getDate() === 30 && new Date().getFullYear() === 2025){
+countDownDate = new Date("February 25, 2026 00:00:00").getTime();
+} else if (new Date().getMonth() === 3 && new Date().getDate() === 21 && new Date().getFullYear() === 2026){
+countDownDate = new Date("June 29, 2026 00:00:00").getTime();
+} else if (new Date().getMonth() === 7 && new Date().getDate() === 24 && new Date().getFullYear() === 2026){
+countDownDate = new Date("October 24, 2026 00:00:00").getTime();
+} else if (new Date().getMonth() === 11 && new Date().getDate() === 14 && new Date().getFullYear() === 2026){
+countDownDate = new Date("February 9, 2027 00:00:00").getTime();
+} else if (new Date().getMonth() === 3 && new Date().getDate() === 4 && new Date().getFullYear() === 2027){
+countDownDate = new Date("June 10, 2027 00:00:00").getTime();
+} else if (new Date().getMonth() === 7 && new Date().getDate() === 5 && new Date().getFullYear() === 2027){
+countDownDate = new Date("October 7, 2027 00:00:00").getTime();
+} else if (new Date().getMonth() === 10 && new Date().getDate() === 29 && new Date().getFullYear() === 2027){
+countDownDate = new Date("January 24, 2028 00:00:00").getTime();
+} else if (new Date().getMonth() === 2 && new Date().getDate() === 15 && new Date().getFullYear() === 2028){
+countDownDate = new Date("May 21, 2028 00:00:00").getTime();
+} else if (new Date().getMonth() === 6 && new Date().getDate() === 14 && new Date().getFullYear() === 2028){
+countDownDate = new Date("September 19, 2028 00:00:00").getTime();
+} else if (new Date().getMonth() === 10 && new Date().getDate() === 12 && new Date().getFullYear() === 2028){
+countDownDate = new Date("January 7, 2029 00:00:00").getTime();
+} else if (new Date().getMonth() === 1 && new Date().getDate() === 28 && new Date().getFullYear() === 2029){
+countDownDate = new Date("May 1, 2029 00:00:00").getTime();
+} else if (new Date().getMonth() === 5 && new Date().getDate() === 26 && new Date().getFullYear() === 2029){
+countDownDate = new Date("September 2, 2029 00:00:00").getTime();
+} else if (new Date().getMonth() === 9 && new Date().getDate() === 25 && new Date().getFullYear() === 2029){
+countDownDate = new Date("December 21, 2029 00:00:00").getTime();
+} else if (new Date().getMonth() === 1 && new Date().getDate() === 11 && new Date().getFullYear() === 2030){
+countDownDate = new Date("April 12, 2030 00:00:00").getTime();
+} else if (new Date().getMonth() === 5 && new Date().getDate() === 7 && new Date().getFullYear() === 2030){
+countDownDate = new Date("August 15, 2030 00:00:00").getTime();
+} else if (new Date().getMonth() === 9 && new Date().getDate() === 8 && new Date().getFullYear() === 2030){
+countDownDate = new Date("December 5, 2030 00:00:00").getTime();
+}
 var x = setInterval(function() {
 
   // Get today's date and time
@@ -507,6 +556,8 @@ var x = setInterval(function() {
 solar()
 lunar()
 mercury()
+
+
 
 </script>
 </body>
