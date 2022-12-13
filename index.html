@@ -169,6 +169,18 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=SOL','popup','width=1600,height=900')">Convert</button></td>
 	    <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ASOLBUSD','popup','width=1600,height=900')">Tradingview</button></td>
     </tr>
+    <th scope="row">10</th>
+    <td><img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.png" width="2%"> SHIB</td>
+    <td><div id="macdshib"></div></td>
+    <td><div id="getshib"></div></td>
+    <td><input type="text" onFocus="this.select()" id="Amountshib" style="font-size:8pt;height:20px;width:120px;"></td>
+    <td><input type="text" onFocus="this.select()" id="Investshib" style="font-size:8pt;height:20px;width:70px;"></td>
+    <td><div id="Valueshib"></div></td>
+    <td><div id="Percentshib"></div></td>
+    <td><div id="Profitshib"></div></td>
+    <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=SHIB','popup','width=1600,height=900')">Convert</button></td>
+    <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ASHIBBUSD','popup','width=1600,height=900')">Tradingview</button></td>
+  </tr>
   </tbody>
 </table>
 <div class="tabbing">
@@ -190,6 +202,7 @@ if(localStorage) {
       var Amountdoge = $("#Amountdoge").val();
       var Amountxrp = $("#Amountxrp").val();
       var Amountsol = $("#Amountsol").val();
+      var Amountshib = $("#Amountshib").val();
       var Investbtc = $("#Investbtc").val();
       var Investdot = $("#Investdot").val();
       var Investeth = $("#Investeth").val();
@@ -199,6 +212,7 @@ if(localStorage) {
       var Investdoge = $("#Investdoge").val();
       var Investxrp = $("#Investxrp").val();
       var Investsol = $("#Investsol").val();		
+      var Investshib = $("#Investshib").val();
 
     		localStorage.setItem("Amountbtc", Amountbtc);
         localStorage.setItem("Amountdot", Amountdot);
@@ -209,6 +223,7 @@ if(localStorage) {
         localStorage.setItem("Amountdoge", Amountdoge);
         localStorage.setItem("Amountxrp", Amountxrp);
         localStorage.setItem("Amountsol", Amountsol);
+        localStorage.setItem("Amountshib", Amountshib);
         localStorage.setItem("Investbtc", Investbtc);
         localStorage.setItem("Investdot", Investdot);
         localStorage.setItem("Investeth", Investeth);
@@ -218,6 +233,7 @@ if(localStorage) {
         localStorage.setItem("Investdoge", Investdoge);
         localStorage.setItem("Investxrp", Investxrp);
         localStorage.setItem("Investsol", Investsol);
+        localStorage.setItem("Investshib", Investshib);
 		});
 	});
 } 
@@ -232,6 +248,7 @@ Amountlunc = (localStorage.getItem("Amountlunc"))
 Amountdoge = (localStorage.getItem("Amountdoge"))
 Amountxrp = (localStorage.getItem("Amountxrp"))
 Amountsol = (localStorage.getItem("Amountsol"))
+Amountshib = (localStorage.getItem("Amountshib"))
 Investbtc = (localStorage.getItem("Investbtc"))
 Investdot = (localStorage.getItem("Investdot"))
 Investeth = (localStorage.getItem("Investeth"))
@@ -241,6 +258,7 @@ Investlunc = (localStorage.getItem("Investlunc"))
 Investdoge = (localStorage.getItem("Investdoge"))
 Investxrp = (localStorage.getItem("Investxrp"))
 Investsol = (localStorage.getItem("Investsol"))
+Investshib = (localStorage.getItem("Investshib"))
 document.getElementById("Amountbtc").setAttribute('value' , Amountbtc||0 )
 document.getElementById("Amountdot").setAttribute('value' , Amountdot||0 )
 document.getElementById("Amounteth").setAttribute('value' , Amounteth||0 )
@@ -250,6 +268,7 @@ document.getElementById("Amountlunc").setAttribute('value' , Amountlunc||0 )
 document.getElementById("Amountdoge").setAttribute('value' , Amountdoge||0 )
 document.getElementById("Amountxrp").setAttribute('value' , Amountxrp||0 )
 document.getElementById("Amountsol").setAttribute('value' , Amountsol||0 )
+document.getElementById("Amountshib").setAttribute('value' , Amountshib||0 )
 document.getElementById("Investbtc").setAttribute('value' , Investbtc||0 )
 document.getElementById("Investdot").setAttribute('value' , Investdot||0 )
 document.getElementById("Investeth").setAttribute('value' , Investeth||0 )
@@ -259,6 +278,7 @@ document.getElementById("Investlunc").setAttribute('value' , Investlunc||0 )
 document.getElementById("Investdoge").setAttribute('value' , Investdoge||0 )
 document.getElementById("Investxrp").setAttribute('value' , Investxrp||0 )
 document.getElementById("Investsol").setAttribute('value' , Investsol||0 )
+document.getElementById("Investshib").setAttribute('value' , Investshib||0 )
 
 
   const getbtc = async () => {
@@ -432,6 +452,25 @@ const getsol = async () => {
     document.getElementById("Percentsol").innerHTML = "<u>"+((((price*Amountsol)*100)/Investsol)-100||0).toFixed(0)+"%</u>"
 })
 }
+const getshib = async () => {
+   fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=SHIBBUSD")
+  .then(response => response.json())
+  .then(data => {
+    price = Number(data.askPrice).toFixed(7)
+    document.getElementById("getshib").innerHTML = price
+    profit = ((price*Amountsol)-Investsol).toFixed(1)
+    if (profit > 0){
+      profit = profit.fontcolor("lime")
+    } else if (profit == 0){
+      profit = profit.fontcolor("white")
+    } else {
+      profit = profit.fontcolor("red")
+    }
+    document.getElementById("Profitshib").innerHTML = profit
+    document.getElementById("Valueshib").innerHTML = (price*Amountshib).toFixed(0)+"$"
+    document.getElementById("Percentshib").innerHTML = "<u>"+((((price*Amountshib)*100)/Investshib)-100||0).toFixed(0)+"%</u>"
+})
+}
 getbtc()
 getdot()
 geteth()
@@ -441,10 +480,11 @@ getlunc()
 getdoge()
 getxrp()
 getsol()
+getshib()
 
 tcount=setInterval(function(){
   tcount++
-  if (tcount==10) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol(); tcount=0}
+  if (tcount==10) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol()|getshib(); tcount=0}
 },1000);
 
 function solar(){
@@ -764,6 +804,21 @@ document.getElementById("macdsol").style.color = "#16D813"
 })
 }
 macdsol()
+const macdshib = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=SHIBBUSD&interval=daily&series_type=open&apikey=GBXYRM983I5T83GK") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macdshib").innerHTML = macd
+document.getElementById("macdshib").style.color = "#ff0000"
+} else {
+document.getElementById("macdshib").innerHTML = macd
+document.getElementById("macdshib").style.color = "#16D813"
+}
+})
+}
+macdshib()
 </script>
 </body>
 </html>
