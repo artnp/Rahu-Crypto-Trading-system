@@ -43,6 +43,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <tr>
     <th scope="col">#</th>
     <th scope="col">Coin</th>
+    <th scope="col">MACD</th>
     <th scope="col">Price</th>
     <th scope="col">Amount</th>
 	  <th scope="col">Invest</th>
@@ -58,6 +59,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <tr>
       <th scope="row">1</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/btc.png" width="2%"> BTC</td>
+      <td><div id="macdbtc"></div></td>
       <td><div id="getbtc"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountbtc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investbtc" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -70,6 +72,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <tr>
       <th scope="row">2</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/dot.png" width="2%"> DOT</td>
+      <td><div id="macddot"></div></td>
       <td><div id="getdot"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountdot" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdot" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -82,6 +85,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <tr>
       <th scope="row">3</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/eth.png" width="2%"> ETH</td>
+      <td><div id="macdeth"></div></td>
       <td><div id="geteth"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amounteth" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investeth" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -94,6 +98,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
 	    <tr>
       <th scope="row">4</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/uni.png" width="2%"> UNI</td>
+      <td><div id="macduni"></div></td>
       <td><div id="getuni"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountuni" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investuni" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -106,6 +111,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
 	    <tr>
       <th scope="row">5</th>
       <td><img src="https://cryptologos.cc/logos/ecash-xec-logo.png" width="2%"> XEC</td>
+      <td><div id="macdxec"></div></td>
       <td><div id="getxec"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountxec" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxec" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -117,6 +123,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     </tr>
 	      <th scope="row">6</th>
       <td><img src="https://cryptologos.cc/logos/thumbs/terra-luna.png" width="2%"> LUNC</td>
+      <td><div id="macdlunc"></div></td>
       <td><div id="getlunc"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountlunc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investlunc" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -128,6 +135,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     </tr>
 	      <th scope="row">7</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/doge.png" width="2%"> DOGE</td>
+      <td><div id="macddoge"></div></td>
       <td><div id="getdoge"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountdoge" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdoge" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -139,6 +147,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     </tr>
 	      <th scope="row">8</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/xrp.png" width="2%"> XRP</td>
+      <td><div id="macdxrp"></div></td>
       <td><div id="getxrp"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountxrp" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxrp" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -150,6 +159,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     </tr>
 	      <th scope="row">9</th>
       <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/sol.png" width="2%"> SOL</td>
+      <td><div id="macdsol"></div></td>
       <td><div id="getsol"></div></td>
       <td><input type="text" onFocus="this.select()" id="Amountsol" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investsol" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -165,13 +175,9 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
 <p style="text-align:right;"><button type="button" class="save" style="font-size:12pt;height:30px;width:130px;" onClick="window.location.reload();">save data</button></p>
 </div>
 </form>
-
-
-
 </center>
 
 <script>
-// Check if the localStorage object exists
 if(localStorage) {
 	$(document).ready(function() {
 		$(".save").click(function() {
@@ -272,7 +278,7 @@ document.getElementById("Investsol").setAttribute('value' , Investsol||0 )
     document.getElementById("Profitbtc").innerHTML = profit
     document.getElementById("Valuebtc").innerHTML = (price*Amountbtc).toFixed(0)+"$"
     document.getElementById("Percentbtc").innerHTML = "<u>"+((((price*Amountbtc)*100)/Investbtc)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const getdot = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=DOTBUSD")
@@ -291,7 +297,7 @@ const getdot = async () => {
     document.getElementById("Profitdot").innerHTML = profit
     document.getElementById("Valuedot").innerHTML = (price*Amountdot).toFixed(0)+"$"
     document.getElementById("Percentdot").innerHTML = "<u>"+((((price*Amountdot)*100)/Investdot)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const geteth = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBUSD")
@@ -310,7 +316,7 @@ const geteth = async () => {
     document.getElementById("Profiteth").innerHTML = profit
     document.getElementById("Valueeth").innerHTML = (price*Amounteth).toFixed(0)+"$"
     document.getElementById("Percenteth").innerHTML = "<u>"+((((price*Amounteth)*100)/Investeth)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const getuni = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=UNIBUSD")
@@ -329,7 +335,7 @@ const getuni = async () => {
     document.getElementById("Profituni").innerHTML = profit
     document.getElementById("Valueuni").innerHTML = (price*Amountuni).toFixed(0)+"$"
     document.getElementById("Percentuni").innerHTML = "<u>"+((((price*Amountuni)*100)/Investuni)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const getxec = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=XECBUSD")
@@ -348,7 +354,7 @@ const getxec = async () => {
     document.getElementById("Profitxec").innerHTML = profit
     document.getElementById("Valuexec").innerHTML = (price*Amountxec).toFixed(0)+"$"
     document.getElementById("Percentxec").innerHTML = "<u>"+((((price*Amountxec)*100)/Investxec)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const getlunc = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=LUNCBUSD")
@@ -367,7 +373,7 @@ const getlunc = async () => {
     document.getElementById("Profitlunc").innerHTML = profit
     document.getElementById("Valuelunc").innerHTML = (price*Amountlunc).toFixed(0)+"$"
     document.getElementById("Percentlunc").innerHTML = "<u>"+((((price*Amountlunc)*100)/Investlunc)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const getdoge = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=DOGEBUSD")
@@ -386,7 +392,7 @@ const getdoge = async () => {
     document.getElementById("Profitdoge").innerHTML = profit
     document.getElementById("Valuedoge").innerHTML = (price*Amountdoge).toFixed(0)+"$"
     document.getElementById("Percentdoge").innerHTML = "<u>"+((((price*Amountdoge)*100)/Investdoge)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const getxrp = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=XRPBUSD")
@@ -405,7 +411,7 @@ const getxrp = async () => {
     document.getElementById("Profitxrp").innerHTML = profit
     document.getElementById("Valuexrp").innerHTML = (price*Amountxrp).toFixed(0)+"$"
     document.getElementById("Percentxrp").innerHTML = "<u>"+((((price*Amountxrp)*100)/Investxrp)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
 const getsol = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=SOLBUSD")
@@ -424,17 +430,17 @@ const getsol = async () => {
     document.getElementById("Profitsol").innerHTML = profit
     document.getElementById("Valuesol").innerHTML = (price*Amountsol).toFixed(0)+"$"
     document.getElementById("Percentsol").innerHTML = "<u>"+((((price*Amountsol)*100)/Investsol)-100||0).toFixed(0)+"%</u>"
-});
+})
 }
-getbtc();
-getdot();
-geteth();
-getuni();
-getxec();
-getlunc();
-getdoge();
-getxrp();
-getsol();
+getbtc()
+getdot()
+geteth()
+getuni()
+getxec()
+getlunc()
+getdoge()
+getxrp()
+getsol()
 
 tcount=setInterval(function(){
   tcount++
@@ -623,6 +629,140 @@ lunar()
 mercury()
 
 
+const macdbtc = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=BTCUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macdbtc").innerHTML = macd
+document.getElementById("macdbtc").style.color = "#ff0000"
+} else {
+document.getElementById("macdbtc").innerHTML = macd
+document.getElementById("macdbtc").style.color = "#16D813"
+}
+})
+}
+const macddot = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=DOTUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macddot").innerHTML = macd
+document.getElementById("macddot").style.color = "#ff0000"
+} else {
+document.getElementById("macddot").innerHTML = macd
+document.getElementById("macddot").style.color = "#16D813"
+}
+})
+}
+const macdeth = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=ETHUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macdeth").innerHTML = macd
+document.getElementById("macdeth").style.color = "#ff0000"
+} else {
+document.getElementById("macdeth").innerHTML = macd
+document.getElementById("macdeth").style.color = "#16D813"
+}
+})
+}
+const macduni = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=UNIUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macduni").innerHTML = macd
+document.getElementById("macduni").style.color = "#ff0000"
+} else {
+document.getElementById("macduni").innerHTML = macd
+document.getElementById("macduni").style.color = "#16D813"
+}
+})
+}
+const macdxec = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=XECUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macdxec").innerHTML = macd
+document.getElementById("macdxec").style.color = "#ff0000"
+} else {
+document.getElementById("macdxec").innerHTML = macd
+document.getElementById("macdxec").style.color = "#16D813"
+}
+})
+}
+const macdlunc = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=LUNCUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macdlunc").innerHTML = macd
+document.getElementById("macdlunc").style.color = "#ff0000"
+} else {
+document.getElementById("macdlunc").innerHTML = macd
+document.getElementById("macdlunc").style.color = "#16D813"
+}
+})
+}
+const macddoge = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=DOGEUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macddoge").innerHTML = macd
+document.getElementById("macddoge").style.color = "#ff0000"
+} else {
+document.getElementById("macddoge").innerHTML = macd
+document.getElementById("macddoge").style.color = "#16D813"
+}
+})
+}
+const macdxrp = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=XRPUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macdxrp").innerHTML = macd
+document.getElementById("macdxrp").style.color = "#ff0000"
+} else {
+document.getElementById("macdxrp").innerHTML = macd
+document.getElementById("macdxrp").style.color = "#16D813"
+}
+})
+}
+const macdsol = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=SOLUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+  .then(response => response.json())
+  .then(data => {
+macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
+if (macd < 0){
+document.getElementById("macdsol").innerHTML = macd
+document.getElementById("macdsol").style.color = "#ff0000"
+} else {
+document.getElementById("macdsol").innerHTML = macd
+document.getElementById("macdsol").style.color = "#16D813"
+}
+})
+}
+macdbtc()
+macddot()
+macdeth()
+macduni()
+macdxec()
+macdlunc()
+macddoge()
+macdxrp()
 
 </script>
 </body>
