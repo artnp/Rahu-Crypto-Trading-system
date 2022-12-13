@@ -644,7 +644,7 @@ document.getElementById("macdbtc").style.color = "#16D813"
 })
 }
 const macddot = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=DOTUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=DOTUSD&interval=daily&series_type=open&apikey=GBXYRM983I5T83GK") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -658,7 +658,7 @@ document.getElementById("macddot").style.color = "#16D813"
 })
 }
 const macdeth = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=ETHUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=ETHUSD&interval=daily&series_type=open&apikey=IODXI4YBGCNDMOXY") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -672,7 +672,7 @@ document.getElementById("macdeth").style.color = "#16D813"
 })
 }
 const macduni = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=UNIUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=UNIUSD&interval=daily&series_type=open&apikey=HM7MMM4HFRNYVNVN") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -686,7 +686,7 @@ document.getElementById("macduni").style.color = "#16D813"
 })
 }
 const macdxec = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=XECUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=XECUSD&interval=daily&series_type=open&apikey=K8O24217G3SU0HMH") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -700,7 +700,7 @@ document.getElementById("macdxec").style.color = "#16D813"
 })
 }
 const macdlunc = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=LUNCUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=LUNCUSD&interval=daily&series_type=open&apikey=D8STTRHYX5DREJCT") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -714,7 +714,7 @@ document.getElementById("macdlunc").style.color = "#16D813"
 })
 }
 const macddoge = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=DOGEUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=DOGEUSD&interval=daily&series_type=open&apikey=WBDBHZCX1EFMNCY5") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -728,7 +728,7 @@ document.getElementById("macddoge").style.color = "#16D813"
 })
 }
 const macdxrp = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=XRPUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=XRPUSD&interval=daily&series_type=open&apikey=P520910DDAKN53VR") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -742,7 +742,7 @@ document.getElementById("macdxrp").style.color = "#16D813"
 })
 }
 const macdsol = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=SOLUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=SOLUSD&interval=daily&series_type=open&apikey=S0A2N4GHLTV6SIPF") 
   .then(response => response.json())
   .then(data => {
 macd = Number(data["Technical Analysis: MACD"][`${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`].MACD_Signal)
@@ -757,15 +757,15 @@ document.getElementById("macdsol").style.color = "#16D813"
 }
 
 macdbtc()
-setTimeout(() => macddot(), 2000);
-setTimeout(() => macdeth(), 3000);
-setTimeout(() => macduni(), 4000);
-setTimeout(() => macdxec(), 5000);
-setTimeout(() => macdlunc(), 6000);
-setTimeout(() => macdlunc(), 7000);
-setTimeout(() => macddoge(), 8000);
-setTimeout(() => macdxrp(), 9000);
-setTimeout(() => macdsol(), 10000);
+macddot()
+macdeth()
+macduni()
+macdxec()
+macdlunc()
+macdlunc()
+macddoge()
+macdxrp()
+macdsol()
 
 </script>
 </body>
