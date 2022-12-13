@@ -458,7 +458,7 @@ const getshib = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(7)
     document.getElementById("getshib").innerHTML = price
-    profit = ((price*Amountsol)-Investsol).toFixed(1)
+    profit = ((price*Amountshib)-Investshib).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
     } else if (profit == 0){
