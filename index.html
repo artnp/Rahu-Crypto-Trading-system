@@ -10,7 +10,7 @@ body {
   color: white;
 }
 .tabbing {
-margin-right:25em
+margin-right:26em
 }
 
 .has-details {
@@ -65,6 +65,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <th scope="col"><div id="zodiac"></div></th>
     <th scope="col">MACD</th>
     <th scope="col">Price</th>
+    <th scope="col">24hr</th>
     <th scope="col">Amount</th>
 	  <th scope="col">Invest</th>
     <th scope="col">Value</th>
@@ -81,6 +82,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict1"></div></center><span class="details">BTC</span></td>
       <td class="has-details"><div id="macdbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="getbtc"></div><span class="details">BTC</span></td>
+      <td class="has-details"><div id="btcpercent"></div><span class="details">BTC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountbtc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investbtc" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuebtc"></div><span class="details">BTC</span></td>
@@ -95,6 +97,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict2"></div></center><span class="details">DOT</span></td>
       <td class="has-details"><div id="macddot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="getdot"></div><span class="details">DOT</span></td>
+      <td class="has-details"><div id="dotpercent"></div><span class="details">DOT</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountdot" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdot" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuedot"></div><span class="details">DOT</span></td>
@@ -109,6 +112,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict3"></div></center><span class="details">ETH</span></td>
       <td class="has-details"><div id="macdeth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="geteth"></div><span class="details">ETH</span></td>
+      <td class="has-details"><div id="ethpercent"></div><span class="details">ETH</span></td>
       <td><input type="text" onFocus="this.select()" id="Amounteth" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investeth" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valueeth"></div><span class="details">ETH</span></td>
@@ -123,6 +127,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict4"></div></center><span class="details">UNI</span></td>
       <td class="has-details"><div id="macduni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="getuni"></div><span class="details">UNI</span></td>
+      <td class="has-details"><div id="unipercent"></div><span class="details">UNI</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountuni" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investuni" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valueuni"></div><span class="details">UNI</span></td>
@@ -137,6 +142,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict5"></div></center><span class="details">XEC</span></td>
       <td class="has-details"><div id="macdxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="getxec"></div><span class="details">XEC</span></td>
+      <td class="has-details"><div id="xecpercent"></div><span class="details">XEC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountxec" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxec" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuexec"></div><span class="details">XEC</span></td>
@@ -150,6 +156,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict6"></div></center><span class="details">LUNC</span></td>
       <td class="has-details"><div id="macdlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="getlunc"></div><span class="details">LUNC</span></td>
+      <td class="has-details"><div id="luncpercent"></div><span class="details">LUNC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountlunc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investlunc" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuelunc"></div><span class="details">LUNC</span></td>
@@ -163,6 +170,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict7"></div></center><span class="details">DOGE</span></td>
       <td class="has-details"><div id="macddoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="getdoge"></div><span class="details">DOGE</span></td>
+      <td class="has-details"><div id="dogepercent"></div><span class="details">DOGE</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountdoge" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdoge" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuedoge"></div><span class="details">DOGE</span></td>
@@ -176,6 +184,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict8"></div></center><span class="details">XRP</span></td>
       <td class="has-details"><div id="macdxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="getxrp"></div><span class="details">XRP</span></td>
+      <td class="has-details"><div id="xrppercent"></div><span class="details">XRP</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountxrp" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxrp" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuexrp"></div><span class="details">XRP</span></td>
@@ -189,6 +198,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict9"></div></center><span class="details">SOL</span></td>
       <td class="has-details"><div id="macdsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="getsol"></div><span class="details">SOL</span></td>
+      <td class="has-details"><div id="solpercent"></div><span class="details">SOL</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountsol" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investsol" style="font-size:8pt;height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuesol"></div><span class="details">SOL</span></td>
@@ -202,6 +212,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <td class="has-details"><center><div id="zodiacpredict10"></div></center><span class="details">SHIB</span></td>
     <td class="has-details"><div id="macdshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="getshib"></div><span class="details">SHIB</span></td>
+    <td class="has-details"><div id="shibpercent"></div><span class="details">SHIB</span></td>
     <td><input type="text" onFocus="this.select()" id="Amountshib" style="font-size:8pt;height:20px;width:120px;"></td>
     <td><input type="text" onFocus="this.select()" id="Investshib" style="font-size:8pt;height:20px;width:70px;"></td>
     <td class="has-details"><div id="Valueshib"></div><span class="details">SHIB</span></td>
@@ -215,6 +226,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td class="has-details"><center><div id="zodiacpredict11"></div></center><span class="details">ADA</span></td>
   <td class="has-details"><div id="macdada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="getada"></div><span class="details">ADA</span></td>
+  <td class="has-details"><div id="adapercent"></div><span class="details">ADA</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountada" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investada" style="font-size:8pt;height:20px;width:70px;"></td>
   <td class="has-details"><div id="Valueada"></div><span class="details">ADA</span></td>
@@ -337,6 +349,11 @@ document.getElementById("Investada").setAttribute('value' , Investada||0 )
   .then(data => {
     price = Number(data.askPrice).toFixed(1)
     document.getElementById("getbtc").innerHTML = price
+    if (data.priceChangePercent > 0){
+      document.getElementById("btcpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("btcpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountbtc)-Investbtc).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -356,6 +373,11 @@ const getdot = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(1)
     document.getElementById("getdot").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("dotpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("dotpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountdot)-Investdot).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -375,6 +397,11 @@ const geteth = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(1)
     document.getElementById("geteth").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("ethpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("ethpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amounteth)-Investeth).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -394,6 +421,11 @@ const getuni = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(1)
     document.getElementById("getuni").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("unipercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("unipercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountuni)-Investuni).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -413,6 +445,11 @@ const getxec = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(6)
     document.getElementById("getxec").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("xecpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("xecpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountxec)-Investxec).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -432,6 +469,11 @@ const getlunc = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(6)
     document.getElementById("getlunc").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("luncpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("luncpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountlunc)-Investlunc).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -451,6 +493,11 @@ const getdoge = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(4)
     document.getElementById("getdoge").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("dogepercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("dogepercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountdoge)-Investdoge).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -470,6 +517,11 @@ const getxrp = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(2)
     document.getElementById("getxrp").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("xrppercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("xrppercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountxrp)-Investxrp).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -489,6 +541,11 @@ const getsol = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(2)
     document.getElementById("getsol").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("solpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("solpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountsol)-Investsol).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -508,6 +565,11 @@ const getshib = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(7)
     document.getElementById("getshib").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("shibpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("shibpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountshib)-Investshib).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
@@ -527,6 +589,11 @@ const getada = async () => {
   .then(data => {
     price = Number(data.askPrice).toFixed(7)
     document.getElementById("getada").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("adapercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#108F3A")
+    } else {
+      document.getElementById("adapercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#A11551")
+    }
     profit = ((price*Amountada)-Investada).toFixed(1)
     if (profit > 0){
       profit = profit.fontcolor("lime")
