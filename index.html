@@ -10,7 +10,7 @@ body {
   color: white;
 }
 .tabbing {
-margin-right:26em
+margin-right:33em
 }
 
 .has-details {
@@ -72,6 +72,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <th scope="col">Percent</th>
 	  <th scope="col">++Profit++</th>
     <th scope="col">Buy/Sell</th>
+    <th scope="col">Short</th>
     <th scope="col">Tradingview</th>
     </tr>
   </thead>
@@ -88,7 +89,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valuebtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="Percentbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="Profitbtc"></div><span class="details">BTC</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=BTC','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=BTC','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/BTCBUSD','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ABTCBUSD','popup','width=1600,height=900')">BTC : BUSD</button></td>
     </tr>
     <tr>
@@ -103,7 +105,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valuedot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="Percentdot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="Profitdot"></div><span class="details">DOT</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=DOT','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=DOT','popup','width=1600,height=900')">Convert</button></td>
+            <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/DOTBUSD','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ADOTBUSD','popup','width=1600,height=900')">DOT : BUSD</button></td>
     </tr>
     <tr>
@@ -118,7 +121,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valueeth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="Percenteth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="Profiteth"></div><span class="details">ETH</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=ETH','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=ETH','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/ETHBUSD','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AETHBUSD','popup','width=1600,height=900')">ETH : BUSD</button></td>
     </tr>
 	    <tr>
@@ -133,7 +137,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valueuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="Percentuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="Profituni"></div><span class="details">UNI</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=UNI','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=UNI','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/UNIBUSD','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AUNIBUSD','popup','width=1600,height=900')">UNI : BUSD</button></td>
     </tr>
 	    <tr>
@@ -148,7 +153,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valuexec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="Percentxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="Profitxec"></div><span class="details">XEC</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=XEC','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=XEC','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/1000XECUSDT','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AXECBUSD','popup','width=1600,height=900')">XEC : BUSD</button></td>
     </tr>
 	      <th scope="row">6</th>
@@ -162,7 +168,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valuelunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="Percentlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="Profitlunc"></div><span class="details">LUNC</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=LUNC','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=LUNC','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/1000LUNCBUSD','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ALUNCBUSD','popup','width=1600,height=900')">LUNC : BUSD</button></td>
     </tr>
 	      <th scope="row">7</th>
@@ -176,7 +183,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valuedoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="Percentdoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="Profitdoge"></div><span class="details">DOGE</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=DOGE','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=DOGE','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/DOGEBUSD','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ADOGEBUSD','popup','width=1600,height=900')">DOGE : BUSD</button></td>
     </tr>
 	      <th scope="row">8</th>
@@ -190,7 +198,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valuexrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="Percentxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="Profitxrp"></div><span class="details">XRP</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=XRP','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=XRP','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/XRPBUSD','popup','width=1600,height=900')">Short</button></td>
       <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AXRPBUSD','popup','width=1600,height=900')">XRP : BUSD</button></td>
     </tr>
 	      <th scope="row">9</th>
@@ -204,8 +213,9 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><div id="Valuesol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="Percentsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="Profitsol"></div><span class="details">SOL</span></td>
-      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=SOL','popup','width=1600,height=900')">Convert</button></td>
-	    <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ASOLBUSD','popup','width=1600,height=900')">SOL : BUSD</button></td>
+      <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=SOL','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/SOLBUSD','popup','width=1600,height=900')">Short</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ASOLBUSD','popup','width=1600,height=900')">SOL : BUSD</button></td>
     </tr>
     <th scope="row">10</th>
     <td><img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.png" width="2%"> SHIB</td>
@@ -218,7 +228,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <td class="has-details"><div id="Valueshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="Percentshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="Profitshib"></div><span class="details">SHIB</span></td>
-    <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=SHIB','popup','width=1600,height=900')">Convert</button></td>
+    <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=SHIB','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/1000SHIBBUSD','popup','width=1600,height=900')">Short</button></td>
     <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ASHIBBUSD','popup','width=1600,height=900')">SHIB : BUSD</button></td>
   </tr>
   <th scope="row">11</th>
@@ -232,7 +243,8 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td class="has-details"><div id="Valueada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="Percentada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="Profitada"></div><span class="details">ADA</span></td>
-  <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=ADA','popup','width=1600,height=900')">Convert</button></td>
+  <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=ADA','popup','width=1600,height=900')">Convert</button></td>
+  <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/ADABUSD','popup','width=1600,height=900')">Short</button></td>
   <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AADABUSD','popup','width=1600,height=900')">ADA : BUSD</button></td>
 </tr>
   </tbody>
