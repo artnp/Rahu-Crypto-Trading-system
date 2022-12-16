@@ -70,7 +70,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
 	  <th scope="col">Invest</th>
     <th scope="col">Value</th>
     <th scope="col">Percent</th>
-	  <th scope="col">Profit</th>
+	  <th scope="col">Profit++</th>
     <th scope="col">Buy/Sell</th>
     <th scope="col">Tradingview</th>
     </tr>
@@ -356,11 +356,11 @@ document.getElementById("Investada").setAttribute('value' , Investada||0 )
     }
     profit = ((price*Amountbtc)-Investbtc).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitbtc").innerHTML = profit
     document.getElementById("Valuebtc").innerHTML = (price*Amountbtc).toFixed(0)+"$"
@@ -380,11 +380,11 @@ const getdot = async () => {
     }
     profit = ((price*Amountdot)-Investdot).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitdot").innerHTML = profit
     document.getElementById("Valuedot").innerHTML = (price*Amountdot).toFixed(0)+"$"
@@ -404,11 +404,11 @@ const geteth = async () => {
     }
     profit = ((price*Amounteth)-Investeth).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profiteth").innerHTML = profit
     document.getElementById("Valueeth").innerHTML = (price*Amounteth).toFixed(0)+"$"
@@ -428,11 +428,11 @@ const getuni = async () => {
     }
     profit = ((price*Amountuni)-Investuni).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profituni").innerHTML = profit
     document.getElementById("Valueuni").innerHTML = (price*Amountuni).toFixed(0)+"$"
@@ -452,11 +452,11 @@ const getxec = async () => {
     }
     profit = ((price*Amountxec)-Investxec).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitxec").innerHTML = profit
     document.getElementById("Valuexec").innerHTML = (price*Amountxec).toFixed(0)+"$"
@@ -476,11 +476,11 @@ const getlunc = async () => {
     }
     profit = ((price*Amountlunc)-Investlunc).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitlunc").innerHTML = profit
     document.getElementById("Valuelunc").innerHTML = (price*Amountlunc).toFixed(0)+"$"
@@ -500,11 +500,11 @@ const getdoge = async () => {
     }
     profit = ((price*Amountdoge)-Investdoge).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitdoge").innerHTML = profit
     document.getElementById("Valuedoge").innerHTML = (price*Amountdoge).toFixed(0)+"$"
@@ -524,11 +524,11 @@ const getxrp = async () => {
     }
     profit = ((price*Amountxrp)-Investxrp).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitxrp").innerHTML = profit
     document.getElementById("Valuexrp").innerHTML = (price*Amountxrp).toFixed(0)+"$"
@@ -548,11 +548,11 @@ const getsol = async () => {
     }
     profit = ((price*Amountsol)-Investsol).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitsol").innerHTML = profit
     document.getElementById("Valuesol").innerHTML = (price*Amountsol).toFixed(0)+"$"
@@ -572,11 +572,11 @@ const getshib = async () => {
     }
     profit = ((price*Amountshib)-Investshib).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitshib").innerHTML = profit
     document.getElementById("Valueshib").innerHTML = (price*Amountshib).toFixed(0)+"$"
@@ -596,11 +596,11 @@ const getada = async () => {
     }
     profit = ((price*Amountada)-Investada).toFixed(1)
     if (profit > 0){
-      profit = profit.fontcolor("lime")
+      profit = profit.fontcolor("lime")+'😀'
     } else if (profit == 0){
       profit = profit.fontcolor("white")
     } else {
-      profit = profit.fontcolor("red")
+      profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitada").innerHTML = profit
     document.getElementById("Valueada").innerHTML = (price*Amountada).toFixed(0)+"$"
