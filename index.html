@@ -817,7 +817,17 @@ solar()
 lunar()
 mercury()
 
-
+document.getElementById("macdbtc").innerHTML = '<center>-</center>'
+document.getElementById("macddot").innerHTML = '<center>-</center>'
+document.getElementById("macdeth").innerHTML = '<center>-</center>'
+document.getElementById("macduni").innerHTML = '<center>-</center>'
+document.getElementById("macdxec").innerHTML = '<center>-</center>'
+document.getElementById("macdlunc").innerHTML = '<center>-</center>'
+document.getElementById("macddoge").innerHTML = '<center>-</center>'
+document.getElementById("macdxrp").innerHTML = '<center>-</center>'
+document.getElementById("macdsol").innerHTML = '<center>-</center>'
+document.getElementById("macdshib").innerHTML = '<center>-</center>'
+document.getElementById("macdada").innerHTML = '<center>-</center>'
 const macdbtc = async () => {
    fetch("https://www.alphavantage.co/query?function=MACD&symbol=BTCUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
   .then(response => response.json())
