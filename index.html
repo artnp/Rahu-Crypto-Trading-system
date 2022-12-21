@@ -65,6 +65,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <th scope="col"><div id="zodiac"></div></th>
     <th scope="col">MACD</th>
     <th scope="col">Price</th>
+    <th scope="col">Bottom</th>
     <th scope="col">24hr</th>
     <th scope="col">Amount</th>
 	  <th scope="col">Invest</th>
@@ -83,6 +84,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict1"></div></center><span class="details">BTC</span></td>
       <td class="has-details"><div id="macdbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="getbtc"></div><span class="details">BTC</span></td>
+      <td class="has-details"><div id="lowbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="btcpercent"></div><span class="details">BTC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountbtc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investbtc" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -99,6 +101,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict2"></div></center><span class="details">DOT</span></td>
       <td class="has-details"><div id="macddot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="getdot"></div><span class="details">DOT</span></td>
+      <td class="has-details"><div id="lowdot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="dotpercent"></div><span class="details">DOT</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountdot" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdot" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -115,6 +118,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict3"></div></center><span class="details">ETH</span></td>
       <td class="has-details"><div id="macdeth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="geteth"></div><span class="details">ETH</span></td>
+      <td class="has-details"><div id="loweth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="ethpercent"></div><span class="details">ETH</span></td>
       <td><input type="text" onFocus="this.select()" id="Amounteth" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investeth" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -131,6 +135,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict4"></div></center><span class="details">UNI</span></td>
       <td class="has-details"><div id="macduni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="getuni"></div><span class="details">UNI</span></td>
+      <td class="has-details"><div id="lowuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="unipercent"></div><span class="details">UNI</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountuni" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investuni" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -147,6 +152,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict5"></div></center><span class="details">XEC</span></td>
       <td class="has-details"><div id="macdxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="getxec"></div><span class="details">XEC</span></td>
+      <td class="has-details"><div id="lowxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="xecpercent"></div><span class="details">XEC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountxec" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxec" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -162,6 +168,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict6"></div></center><span class="details">LUNC</span></td>
       <td class="has-details"><div id="macdlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="getlunc"></div><span class="details">LUNC</span></td>
+      <td class="has-details"><div id="lowlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="luncpercent"></div><span class="details">LUNC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountlunc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investlunc" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -177,6 +184,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict7"></div></center><span class="details">DOGE</span></td>
       <td class="has-details"><div id="macddoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="getdoge"></div><span class="details">DOGE</span></td>
+      <td class="has-details"><div id="lowdoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="dogepercent"></div><span class="details">DOGE</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountdoge" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdoge" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -192,6 +200,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict8"></div></center><span class="details">XRP</span></td>
       <td class="has-details"><div id="macdxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="getxrp"></div><span class="details">XRP</span></td>
+      <td class="has-details"><div id="lowxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="xrppercent"></div><span class="details">XRP</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountxrp" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxrp" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -207,6 +216,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
       <td class="has-details"><center><div id="zodiacpredict9"></div></center><span class="details">SOL</span></td>
       <td class="has-details"><div id="macdsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="getsol"></div><span class="details">SOL</span></td>
+      <td class="has-details"><div id="lowsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="solpercent"></div><span class="details">SOL</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountsol" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investsol" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -222,6 +232,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
     <td class="has-details"><center><div id="zodiacpredict10"></div></center><span class="details">SHIB</span></td>
     <td class="has-details"><div id="macdshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="getshib"></div><span class="details">SHIB</span></td>
+    <td class="has-details"><div id="lowshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="shibpercent"></div><span class="details">SHIB</span></td>
     <td><input type="text" onFocus="this.select()" id="Amountshib" style="font-size:8pt;height:20px;width:120px;"></td>
     <td><input type="text" onFocus="this.select()" id="Investshib" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -237,6 +248,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td class="has-details"><center><div id="zodiacpredict11"></div></center><span class="details">ADA</span></td>
   <td class="has-details"><div id="macdada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="getada"></div><span class="details">ADA</span></td>
+  <td class="has-details"><div id="lowada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="adapercent"></div><span class="details">ADA</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountada" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investada" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -359,7 +371,7 @@ document.getElementById("Investada").setAttribute('value' , Investada||0 )
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=BTCBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(1)
+    price = Number(data.askPrice).toFixed(0)
     document.getElementById("getbtc").innerHTML = price
     if (data.priceChangePercent > 0){
       document.getElementById("btcpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -377,6 +389,7 @@ document.getElementById("Investada").setAttribute('value' , Investada||0 )
     document.getElementById("Profitbtc").innerHTML = profit
     document.getElementById("Valuebtc").innerHTML = (price*Amountbtc).toFixed(0)+"$"
     document.getElementById("Percentbtc").innerHTML = "<u>"+((((price*Amountbtc)*100)/Investbtc)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowbtc").innerHTML = '8281'.fontcolor("grey")
 })
 }
 const getdot = async () => {
@@ -401,13 +414,14 @@ const getdot = async () => {
     document.getElementById("Profitdot").innerHTML = profit
     document.getElementById("Valuedot").innerHTML = (price*Amountdot).toFixed(0)+"$"
     document.getElementById("Percentdot").innerHTML = "<u>"+((((price*Amountdot)*100)/Investdot)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowdot").innerHTML = '2.1'.fontcolor("grey")
 })
 }
 const geteth = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(1)
+    price = Number(data.askPrice).toFixed(0)
     document.getElementById("geteth").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("ethpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -425,6 +439,7 @@ const geteth = async () => {
     document.getElementById("Profiteth").innerHTML = profit
     document.getElementById("Valueeth").innerHTML = (price*Amounteth).toFixed(0)+"$"
     document.getElementById("Percenteth").innerHTML = "<u>"+((((price*Amounteth)*100)/Investeth)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("loweth").innerHTML = '314'.fontcolor("grey")
 })
 }
 const getuni = async () => {
@@ -449,6 +464,7 @@ const getuni = async () => {
     document.getElementById("Profituni").innerHTML = profit
     document.getElementById("Valueuni").innerHTML = (price*Amountuni).toFixed(0)+"$"
     document.getElementById("Percentuni").innerHTML = "<u>"+((((price*Amountuni)*100)/Investuni)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowuni").innerHTML = '0.27'.fontcolor("grey")
 })
 }
 const getxec = async () => {
@@ -473,6 +489,7 @@ const getxec = async () => {
     document.getElementById("Profitxec").innerHTML = profit
     document.getElementById("Valuexec").innerHTML = (price*Amountxec).toFixed(0)+"$"
     document.getElementById("Percentxec").innerHTML = "<u>"+((((price*Amountxec)*100)/Investxec)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowxec").innerHTML = '0.000003'.fontcolor("grey")
 })
 }
 const getlunc = async () => {
@@ -497,6 +514,8 @@ const getlunc = async () => {
     document.getElementById("Profitlunc").innerHTML = profit
     document.getElementById("Valuelunc").innerHTML = (price*Amountlunc).toFixed(0)+"$"
     document.getElementById("Percentlunc").innerHTML = "<u>"+((((price*Amountlunc)*100)/Investlunc)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowlunc").innerHTML = '0.00010'.fontcolor("grey")
+    
 })
 }
 const getdoge = async () => {
@@ -521,6 +540,7 @@ const getdoge = async () => {
     document.getElementById("Profitdoge").innerHTML = profit
     document.getElementById("Valuedoge").innerHTML = (price*Amountdoge).toFixed(0)+"$"
     document.getElementById("Percentdoge").innerHTML = "<u>"+((((price*Amountdoge)*100)/Investdoge)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowdoge").innerHTML = '0.03'.fontcolor("grey")
 })
 }
 const getxrp = async () => {
@@ -545,6 +565,7 @@ const getxrp = async () => {
     document.getElementById("Profitxrp").innerHTML = profit
     document.getElementById("Valuexrp").innerHTML = (price*Amountxrp).toFixed(0)+"$"
     document.getElementById("Percentxrp").innerHTML = "<u>"+((((price*Amountxrp)*100)/Investxrp)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowxrp").innerHTML = '0.28'.fontcolor("grey")
 })
 }
 const getsol = async () => {
@@ -569,6 +590,7 @@ const getsol = async () => {
     document.getElementById("Profitsol").innerHTML = profit
     document.getElementById("Valuesol").innerHTML = (price*Amountsol).toFixed(0)+"$"
     document.getElementById("Percentsol").innerHTML = "<u>"+((((price*Amountsol)*100)/Investsol)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowsol").innerHTML = '4.2'.fontcolor("grey")
 })
 }
 const getshib = async () => {
@@ -593,6 +615,7 @@ const getshib = async () => {
     document.getElementById("Profitshib").innerHTML = profit
     document.getElementById("Valueshib").innerHTML = (price*Amountshib).toFixed(0)+"$"
     document.getElementById("Percentshib").innerHTML = "<u>"+((((price*Amountshib)*100)/Investshib)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowshib").innerHTML = '0.0000035'.fontcolor("grey")
 })
 }
 const getada = async () => {
@@ -617,6 +640,7 @@ const getada = async () => {
     document.getElementById("Profitada").innerHTML = profit
     document.getElementById("Valueada").innerHTML = (price*Amountada).toFixed(0)+"$"
     document.getElementById("Percentada").innerHTML = "<u>"+((((price*Amountada)*100)/Investada)-100||0).toFixed(0)+"%</u>"
+    document.getElementById("lowada").innerHTML = '0.1859'.fontcolor("grey")
 })
 }
 getbtc()
