@@ -259,7 +259,25 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/ADABUSD','popup','width=1600,height=900')">Short</button></td>
   <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AADABUSD','popup','width=1600,height=900')">ADA : BUSD</button></td>
 </tr>
-  </tbody>
+
+สวนระบบ
+
+ <th scope="row"></th>
+  <td><img src="https://cryptologos.cc/logos/pax-gold-paxg-logo.png" width="1%"> PAXG</td>
+  <td class="has-details"><center>-</center><span class="details">PAXG</span></td>
+  <td class="has-details"><div id="macdpaxg"></div><span class="details">PAXG</span></td>
+  <td class="has-details"><div id="getpaxg"></div><span class="details">PAXG</span></td>
+  <td class="has-details"><span class="details">PAXG</span></td>
+  <td class="has-details"><div id="paxgpercent"></div><span class="details">PAXG</span></td>
+  <td><input type="text" onFocus="this.select()" id="Amountpaxg" style="font-size:8pt;height:20px;width:120px;"></td>
+  <td><input type="text" onFocus="this.select()" id="Investpaxg" style="font-size:8pt;height:20px;width:70px;"></td>
+  <td class="has-details"><div id="Valuepaxg"></div><span class="details">PAXG</span></td>
+  <td class="has-details"><div id="Percentpaxg"></div><span class="details">PAXG</span></td>
+  <td class="has-details"><div id="Profitpaxg"></div><span class="details">PAXG</span></td>
+  <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=PAXG','popup','width=1600,height=900')">Convert</button></td>
+  <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/PAXGBUSD','popup','width=1600,height=900')">Short</button></td>
+  <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3APAXGBUSD','popup','width=1600,height=900')">PAXG : BUSD</button></td>
+</tbody>
 </table>
 <div class="tabbing">
 <p style="text-align:right;"><button type="button" class="save" style="font-size:12pt;height:30px;width:130px;" onClick="window.location.reload();">save data</button></p>
@@ -283,6 +301,7 @@ if(localStorage) {
       var Amountsol = $("#Amountsol").val();
       var Amountshib = $("#Amountshib").val();
       var Amountada = $("#Amountada").val();
+      var Amountpaxg = $("#Amountpaxg").val();
       var Investbtc = $("#Investbtc").val();
       var Investdot = $("#Investdot").val();
       var Investeth = $("#Investeth").val();
@@ -294,6 +313,7 @@ if(localStorage) {
       var Investsol = $("#Investsol").val();		
       var Investshib = $("#Investshib").val();
       var Investada = $("#Investada").val();
+      var Investpaxg = $("#Investpaxg").val();
 
     		localStorage.setItem("Amountbtc", Amountbtc);
         localStorage.setItem("Amountdot", Amountdot);
@@ -306,6 +326,7 @@ if(localStorage) {
         localStorage.setItem("Amountsol", Amountsol);
         localStorage.setItem("Amountshib", Amountshib);
         localStorage.setItem("Amountada", Amountada);
+        localStorage.setItem("Amountpaxg", Amountpaxg);
         localStorage.setItem("Investbtc", Investbtc);
         localStorage.setItem("Investdot", Investdot);
         localStorage.setItem("Investeth", Investeth);
@@ -317,6 +338,7 @@ if(localStorage) {
         localStorage.setItem("Investsol", Investsol);
         localStorage.setItem("Investshib", Investshib);
         localStorage.setItem("Investada", Investada);
+        localStorage.setItem("Investpaxg", Investpaxg);
 		});
 	});
 } 
@@ -333,6 +355,7 @@ Amountxrp = (localStorage.getItem("Amountxrp"))
 Amountsol = (localStorage.getItem("Amountsol"))
 Amountshib = (localStorage.getItem("Amountshib"))
 Amountada = (localStorage.getItem("Amountada"))
+Amountpaxg = (localStorage.getItem("Amountpaxg"))
 Investbtc = (localStorage.getItem("Investbtc"))
 Investdot = (localStorage.getItem("Investdot"))
 Investeth = (localStorage.getItem("Investeth"))
@@ -344,6 +367,7 @@ Investxrp = (localStorage.getItem("Investxrp"))
 Investsol = (localStorage.getItem("Investsol"))
 Investshib = (localStorage.getItem("Investshib"))
 Investada = (localStorage.getItem("Investada"))
+Investpaxg = (localStorage.getItem("Investpaxg"))
 document.getElementById("Amountbtc").setAttribute('value' , Amountbtc||0 )
 document.getElementById("Amountdot").setAttribute('value' , Amountdot||0 )
 document.getElementById("Amounteth").setAttribute('value' , Amounteth||0 )
@@ -355,6 +379,7 @@ document.getElementById("Amountxrp").setAttribute('value' , Amountxrp||0 )
 document.getElementById("Amountsol").setAttribute('value' , Amountsol||0 )
 document.getElementById("Amountshib").setAttribute('value' , Amountshib||0 )
 document.getElementById("Amountada").setAttribute('value' , Amountada||0 )
+document.getElementById("Amountpaxg").setAttribute('value' , Amountpaxg||0 )
 document.getElementById("Investbtc").setAttribute('value' , Investbtc||0 )
 document.getElementById("Investdot").setAttribute('value' , Investdot||0 )
 document.getElementById("Investeth").setAttribute('value' , Investeth||0 )
@@ -366,6 +391,7 @@ document.getElementById("Investxrp").setAttribute('value' , Investxrp||0 )
 document.getElementById("Investsol").setAttribute('value' , Investsol||0 )
 document.getElementById("Investshib").setAttribute('value' , Investshib||0 )
 document.getElementById("Investada").setAttribute('value' , Investada||0 )
+document.getElementById("Investpaxg").setAttribute('value' , Investpaxg||0 )
 
 
   const getbtc = async () => {
@@ -644,6 +670,30 @@ const getada = async () => {
     document.getElementById("lowada").innerHTML = '0.1859'.fontcolor("grey")
 })
 }
+const getpaxg = async () => {
+   fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=PAXGBUSD")
+  .then(response => response.json())
+  .then(data => {
+    price = Number(data.askPrice).toFixed(7)
+    document.getElementById("getpaxg").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("paxgpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
+    } else {
+      document.getElementById("paxgpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#E5260A")
+    }
+    profit = ((price*Amountpaxg)-Investpaxg).toFixed(1)
+    if (profit > 0){
+      profit = profit.fontcolor("lime")+'😀'
+    } else if (profit == 0){
+      profit = profit.fontcolor("white")
+    } else {
+      profit = profit.fontcolor("red")+'😡'
+    }
+    document.getElementById("Profitpaxg").innerHTML = profit
+    document.getElementById("Valuepaxg").innerHTML = (price*Amountada).toFixed(0)+"$"
+    document.getElementById("Percentpaxg").innerHTML = "<u>"+((((price*Amountpaxg)*100)/Investpaxg)-100||0).toFixed(0)+"%</u>"
+})
+}
 getbtc()
 getdot()
 geteth()
@@ -655,6 +705,7 @@ getxrp()
 getsol()
 getshib()
 getada()
+getpaxg()
 
  tcount=setInterval(function(){
    tcount++
