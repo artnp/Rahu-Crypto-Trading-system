@@ -690,7 +690,7 @@ const getpaxg = async () => {
       profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitpaxg").innerHTML = profit
-    document.getElementById("Valuepaxg").innerHTML = (price*Amountada).toFixed(0)+"$"
+    document.getElementById("Valuepaxg").innerHTML = (price*Amountpaxg).toFixed(0)+"$"
     document.getElementById("Percentpaxg").innerHTML = "<u>"+((((price*Amountpaxg)*100)/Investpaxg)-100||0).toFixed(0)+"%</u>"
 })
 }
@@ -709,7 +709,7 @@ getpaxg()
 
  tcount=setInterval(function(){
    tcount++
-   if (tcount==20) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol()|getshib(); tcount=0}
+   if (tcount==20) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol()|getshib()|getada()|getpaxg(); tcount=0}
  },2000);
 
 function solar(){
