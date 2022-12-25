@@ -259,15 +259,28 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/ADABUSD','popup','width=1600,height=900')">Short</button></td>
   <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AADABUSD','popup','width=1600,height=900')">ADA : BUSD</button></td>
 </tr>
-
-สวนระบบ
-
  <th scope="row"></th>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td><center>•••สวนระบบ•••</center></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+ <th scope="row">12</th>
   <td><img src="https://cryptologos.cc/logos/pax-gold-paxg-logo.png" width="1%"> PAXG</td>
   <td class="has-details"><center>-</center><span class="details">PAXG</span></td>
   <td class="has-details"><div id="macdpaxg"></div><span class="details">PAXG</span></td>
   <td class="has-details"><div id="getpaxg"></div><span class="details">PAXG</span></td>
-  <td class="has-details"><span class="details">PAXG</span></td>
+  <td class="has-details"><center>-</center><span class="details">PAXG</span></td>
   <td class="has-details"><div id="paxgpercent"></div><span class="details">PAXG</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountpaxg" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investpaxg" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -277,6 +290,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=PAXG','popup','width=1600,height=900')">Convert</button></td>
   <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/PAXGBUSD','popup','width=1600,height=900')">Short</button></td>
   <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3APAXGBUSD','popup','width=1600,height=900')">PAXG : BUSD</button></td>
+</tr>
 </tbody>
 </table>
 <div class="tabbing">
@@ -904,6 +918,7 @@ document.getElementById("macdxrp").innerHTML = '<center>-</center>'
 document.getElementById("macdsol").innerHTML = '<center>-</center>'
 document.getElementById("macdshib").innerHTML = '<center>-</center>'
 document.getElementById("macdada").innerHTML = '<center>-</center>'
+document.getElementById("macdpaxg").innerHTML = '<center>-</center>'
 const macdbtc = async () => {
    fetch("https://www.alphavantage.co/query?function=MACD&symbol=BTCUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
   .then(response => response.json())
@@ -1058,6 +1073,20 @@ document.getElementById("macdada").style.color = "#16D813"
 })
 }
 macdada()
+const macdpaxg = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=PAXGBUSD&interval=daily&series_type=open&apikey=S0A2N4GHLTV6SIPF") 
+  .then(response => response.json())
+  .then(data => {
+dataTA = data["Technical Analysis: MACD"]
+dataTA2 = Object.keys(dataTA)[0]
+macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
+if (macd > 0.00001) {
+document.getElementById("macdpaxg").innerHTML = macd+'✓'
+document.getElementById("macdpaxg").style.color = "#16D813"
+}
+})
+}
+macdpaxg()
 
 function zodiacbtc(){
   document.getElementById("zodiac").innerHTML = 'Astrology'
