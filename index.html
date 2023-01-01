@@ -294,7 +294,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
 </tbody>
 </table>
 <div class="tabbing">
-<p style="text-align:right;"><button type="button" class="save" style="font-size:12pt;height:30px;width:130px;" onClick="window.location.reload();">save data</button></p>
+<p style="text-align:right;"><button type="button" class="save" style="font-size:12pt;height:30px;width:130px;" onClick="window.location.reload();">save data</button> <br><a id="results">ส่งออกข้อมูล</a>
 </div>
 </form>
 <hr><i><font size='2'>" ปี 2028 จะเป็นจุดที่คริปโตรุ่งเรืองที่สุด " - <a href='https://artnp.github.io/predict-future-event' target="_blank">สคริปต์ทำนายอนาคต</a> / สคริปต์นี้หมดอายุปี 2030 ต้องเขียนโค้ดคำนวณดวงดาวเพิ่มใหม่</font></i>
@@ -356,7 +356,8 @@ if(localStorage) {
 		});
 	});
 } 
-  
+
+
     
 Amountbtc = eval((localStorage.getItem("Amountbtc")).replace(',',''))
 Amountdot = eval((localStorage.getItem("Amountdot")).replace(',',''))
@@ -406,6 +407,16 @@ document.getElementById("Investsol").setAttribute('value' , Investsol||0 )
 document.getElementById("Investshib").setAttribute('value' , Investshib||0 )
 document.getElementById("Investada").setAttribute('value' , Investada||0 )
 document.getElementById("Investpaxg").setAttribute('value' , Investpaxg||0 )
+
+
+
+aryx = "Coin,Amount,Invest"+"\nBTC," + localStorage.getItem("Amountbtc")+","+localStorage.getItem("Investbtc")+"\nDOT,"+localStorage.getItem("Amountdot")+","+localStorage.getItem("Investdot")+"\nETH,"+localStorage.getItem("Amounteth")+","+localStorage.getItem("Investeth")+"\nUNI,"+localStorage.getItem("Amountuni")+","+localStorage.getItem("Investuni")+"\nXEC,"+localStorage.getItem("Amountxec")+","+localStorage.getItem("Investxec")+"\nLUNC,"+localStorage.getItem("Amountlunc")+","+localStorage.getItem("Investlunc")+"\nDOGE,"+localStorage.getItem("Amountdoge")+","+localStorage.getItem("Investdoge")+"\nXRP,"+localStorage.getItem("Amountxrp")+","+localStorage.getItem("Investxrp")+"\nSOL,"+localStorage.getItem("Amountsol")+","+localStorage.getItem("Investsol")+"\nSHIB,"+localStorage.getItem("Amountshib")+","+localStorage.getItem("Investshib")+"\nADA,"+localStorage.getItem("Amountada")+","+localStorage.getItem("Investada")+"\nPAXG,"+localStorage.getItem("Amountpaxg")+","+localStorage.getItem("Investpaxg")
+blob = new Blob([aryx], {type: "text/csv"})
+urlx = URL.createObjectURL(blob)
+a = document.querySelector("#results");
+a.href = urlx
+a.download = "export.csv"
+    
 
 
   const getbtc = async () => {
