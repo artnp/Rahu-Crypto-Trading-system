@@ -271,6 +271,23 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/ADABUSD','popup','width=1600,height=900')">Short</button></td>
   <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AADABUSD','popup','width=1600,height=900')">ADA : BUSD</button></td>
 </tr>
+  <th scope="row">12</th>
+  <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/vet.png" width="2%"> VET</td>
+  <td class="has-details"><center>-</center><span class="details">VET</span></td>
+  <td class="has-details"><center><div id="zodiacpredict12"></div></center><span class="details">VET</span></td>
+  <td class="has-details"><div id="macdvet"></div><span class="details">VET</span></td>
+  <td class="has-details"><div id="getvet"></div><span class="details">VET</span></td>
+  <td class="has-details"><div id="lowvet"><center>-</center></div><span class="details">VET</span></td>
+  <td class="has-details"><div id="vetpercent"></div><span class="details">VET</span></td>
+  <td><input type="text" onFocus="this.select()" id="Amountvet" style="font-size:8pt;height:20px;width:120px;"></td>
+  <td><input type="text" onFocus="this.select()" id="Investvet" style="font-size:8pt;height:20px;width:70px;"></td>
+  <td class="has-details"><div id="Valuevet"></div><span class="details">VET</span></td>
+  <td class="has-details"><div id="Percentvet"></div><span class="details">VET</span></td>
+  <td class="has-details"><div id="Profitvet"></div><span class="details">VET</span></td>
+  <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=VET','popup','width=1600,height=900')">Convert</button></td>
+  <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/VETBUSD','popup','width=1600,height=900')">Short</button></td>
+  <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AVETBUSD','popup','width=1600,height=900')">VET : BUSD</button></td>
+</tr>
 <tr>
  <th scope="row"></th>
   <td><div align="right">• • • • • • • • • • • แร่สวนระบบ • • • • • • • • • • •</div></td>
@@ -289,7 +306,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td></td>
   <td></td>
 </tr>
- <th scope="row">12</th>
+ <th scope="row">1.</th>
   <td><img src="https://cryptologos.cc/logos/pax-gold-paxg-logo.png" width="1%"> PAXG</td>
   <td class="has-details"><center>-</center><span class="details">PAXG</span></td>
   <td class="has-details"><center>-</center><span class="details">PAXG</span></td>
@@ -382,6 +399,7 @@ if(localStorage) {
       var Amountshib = $("#Amountshib").val();
       var Amountada = $("#Amountada").val();
       var Amountpaxg = $("#Amountpaxg").val();
+      var Amountvet = $("#Amountvet").val();
       var Investbtc = $("#Investbtc").val();
       var Investdot = $("#Investdot").val();
       var Investeth = $("#Investeth").val();
@@ -394,6 +412,7 @@ if(localStorage) {
       var Investshib = $("#Investshib").val();
       var Investada = $("#Investada").val();
       var Investpaxg = $("#Investpaxg").val();
+      var Investvet = $("#Investvet").val();
 
     		localStorage.setItem("Amountbtc", Amountbtc);
         localStorage.setItem("Amountdot", Amountdot);
@@ -407,6 +426,7 @@ if(localStorage) {
         localStorage.setItem("Amountshib", Amountshib);
         localStorage.setItem("Amountada", Amountada);
         localStorage.setItem("Amountpaxg", Amountpaxg);
+        localStorage.setItem("Amountvet", Amountvet);
         localStorage.setItem("Investbtc", Investbtc);
         localStorage.setItem("Investdot", Investdot);
         localStorage.setItem("Investeth", Investeth);
@@ -419,6 +439,7 @@ if(localStorage) {
         localStorage.setItem("Investshib", Investshib);
         localStorage.setItem("Investada", Investada);
         localStorage.setItem("Investpaxg", Investpaxg);
+        localStorage.setItem("Investvet", Investvet);
 		});
 	});
 } 
@@ -435,6 +456,7 @@ Amountsol = eval((localStorage.getItem("Amountsol")).replace(',',''))
 Amountshib = eval((localStorage.getItem("Amountshib")).replace(',',''))
 Amountada = eval((localStorage.getItem("Amountada")).replace(',',''))
 Amountpaxg = eval((localStorage.getItem("Amountpaxg")).replace(',',''))
+Amountvet = eval((localStorage.getItem("Amountvet")).replace(',',''))
 Investbtc = eval((localStorage.getItem("Investbtc")).replace(',',''))
 Investdot = eval((localStorage.getItem("Investdot")).replace(',',''))
 Investeth = eval((localStorage.getItem("Investeth")).replace(',',''))
@@ -447,6 +469,7 @@ Investsol = eval((localStorage.getItem("Investsol")).replace(',',''))
 Investshib = eval((localStorage.getItem("Investshib")).replace(',',''))
 Investada = eval((localStorage.getItem("Investada")).replace(',',''))
 Investpaxg = eval((localStorage.getItem("Investpaxg")).replace(',',''))
+Investvet = eval((localStorage.getItem("Investvet")).replace(',',''))
 document.getElementById("Amountbtc").setAttribute('value' , Amountbtc||0 )
 document.getElementById("Amountdot").setAttribute('value' , Amountdot||0 )
 document.getElementById("Amounteth").setAttribute('value' , Amounteth||0 )
@@ -459,6 +482,7 @@ document.getElementById("Amountsol").setAttribute('value' , Amountsol||0 )
 document.getElementById("Amountshib").setAttribute('value' , Amountshib||0 )
 document.getElementById("Amountada").setAttribute('value' , Amountada||0 )
 document.getElementById("Amountpaxg").setAttribute('value' , Amountpaxg||0 )
+document.getElementById("Amountvet").setAttribute('value' , Amountvet||0 )
 document.getElementById("Investbtc").setAttribute('value' , Investbtc||0 )
 document.getElementById("Investdot").setAttribute('value' , Investdot||0 )
 document.getElementById("Investeth").setAttribute('value' , Investeth||0 )
@@ -471,6 +495,7 @@ document.getElementById("Investsol").setAttribute('value' , Investsol||0 )
 document.getElementById("Investshib").setAttribute('value' , Investshib||0 )
 document.getElementById("Investada").setAttribute('value' , Investada||0 )
 document.getElementById("Investpaxg").setAttribute('value' , Investpaxg||0 )
+document.getElementById("Investvet").setAttribute('value' , Investvet||0 )
 
 
 
@@ -783,6 +808,30 @@ const getpaxg = async () => {
     document.getElementById("Percentpaxg").innerHTML = "<u>"+((((price*Amountpaxg)*100)/Investpaxg)-100||0).toFixed(0)+"%</u>"
 })
 }
+const getvet = async () => {
+   fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=VETBUSD")
+  .then(response => response.json())
+  .then(data => {
+    price = Number(data.askPrice).toFixed(7)
+    document.getElementById("getvet").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("vetpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
+    } else {
+      document.getElementById("vetpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#E5260A")
+    }
+    profit = ((price*Amountvet)-Investvet).toFixed(1)
+    if (profit > 0){
+      profit = profit.fontcolor("lime")+'😀'
+    } else if (profit == 0){
+      profit = profit.fontcolor("white")
+    } else {
+      profit = profit.fontcolor("red")+'😡'
+    }
+    document.getElementById("Profitvet").innerHTML = profit
+    document.getElementById("Valuevet").innerHTML = (price*Amountpaxg).toFixed(0)+"$"
+    document.getElementById("Percentvet").innerHTML = "<u>"+((((price*Amountvet)*100)/Investvet)-100||0).toFixed(0)+"%</u>"
+})
+}
 getbtc()
 getdot()
 geteth()
@@ -795,10 +844,11 @@ getsol()
 getshib()
 getada()
 getpaxg()
+getvet()
 
  tcount=setInterval(function(){
    tcount++
-   if (tcount==20) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol()|getshib()|getada()|getpaxg(); tcount=0}
+   if (tcount==20) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol()|getshib()|getada()|getpaxg()|getvet(); tcount=0}
  },2000);
 
 function solar(){
@@ -994,6 +1044,7 @@ document.getElementById("macdsol").innerHTML = '<center>-</center>'
 document.getElementById("macdshib").innerHTML = '<center>-</center>'
 document.getElementById("macdada").innerHTML = '<center>-</center>'
 document.getElementById("macdpaxg").innerHTML = '<center>-</center>'
+document.getElementById("macdvet").innerHTML = '<center>-</center>'
 const macdbtc = async () => {
    fetch("https://www.alphavantage.co/query?function=MACD&symbol=BTCUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
   .then(response => response.json())
@@ -1162,6 +1213,20 @@ document.getElementById("macdpaxg").style.color = "#16D813"
 })
 }
 macdpaxg()
+const macdvet = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=VETBUSD&interval=daily&series_type=open&apikey=P520910DDAKN53VR") 
+  .then(response => response.json())
+  .then(data => {
+dataTA = data["Technical Analysis: MACD"]
+dataTA2 = Object.keys(dataTA)[0]
+macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
+if (macd > 0.00001) {
+document.getElementById("macdvet").innerHTML = macd+'✓'
+document.getElementById("macdvet").style.color = "#16D813"
+}
+})
+}
+macdpaxg()
 
 function zodiacbtc(){
   document.getElementById("zodiac").innerHTML = 'Astrology'
@@ -1176,6 +1241,7 @@ function zodiacbtc(){
   document.getElementById("zodiacpredict9").innerHTML = '-'
   document.getElementById("zodiacpredict10").innerHTML = '-'
   document.getElementById("zodiacpredict11").innerHTML = '-'
+    document.getElementById("zodiacpredict12").innerHTML = '-'
   m = new Date().getMonth() 
   d = new Date().getDate()
   y = new Date().getFullYear()
