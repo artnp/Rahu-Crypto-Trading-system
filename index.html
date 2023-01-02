@@ -828,7 +828,7 @@ const getvet = async () => {
       profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitvet").innerHTML = profit
-    document.getElementById("Valuevet").innerHTML = (price*Amountpaxg).toFixed(0)+"$"
+    document.getElementById("Valuevet").innerHTML = (price*Amountvet).toFixed(0)+"$"
     document.getElementById("Percentvet").innerHTML = "<u>"+((((price*Amountvet)*100)/Investvet)-100||0).toFixed(0)+"%</u>"
 })
 }
