@@ -32,6 +32,9 @@ margin-right:33em
 .has-details:hover span {
   transform: translateY(70%) scale(1);
 }
+a { color: #FF0000; 
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -53,7 +56,6 @@ margin-right:33em
   
     </tbody>
   </table>
-<br>
 <a class="btn btn-danger btn-sm" href="#"  target="popup" 
 onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','width=1600,height=900'); return false;">Crypto Screen [✓]</a><br>
   <form>
@@ -374,69 +376,11 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td></td>
   <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3APAXGBUSD','popup','width=1600,height=900')">PAXG : BUSD</button></td>
 </tr>
-<tr>
-  <th scope="row"></th>
-   <td><div align="right">• • • • • • • • • • ดัชนีค้ำโลก • • • • • • • • • • •</div></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td><a class="btn btn-danger btn-sm" href="#"  target="popup" 
-    onclick="window.open('https://www.tradingview.com/screener/','popup','width=1600,height=900'); return false;">Stock Screen [✓]</a></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
- </tr>
-<tr>
-  <th scope="row">1</th>
-  <td><img src="https://cdn-icons-png.flaticon.com/128/197/197484.png" width="2.5%"> NASDAQ</td>
-  <td></td><td></td>
-  <td class="has-details"><div id="macdnasdaq"></div><span class="details">NASDAQ</span></td>
-    <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=NASDAQ%3ANDX','popup','width=1600,height=900')">NASDAQ : US</button></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-<tr>
-  <th scope="row">2</th>
-  <td><img src="https://cdn-icons-png.flaticon.com/128/197/197615.png" width="2.5%"> STOXX</td>
-  <td></td><td></td>
-  <td class="has-details"><div id="macdstoxx"></div><span class="details">STOXX</span></td>
-  <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=VELOCITY%3ASTOXX50','popup','width=1600,height=900')">STOXX50 : EU</button></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-  <tr>
-  <th scope="row">3</th>
-  <td><img src="https://cdn-icons-png.flaticon.com/128/197/197604.png" width="2.5%"> Nikkei</td>
-  <td></td><td></td>
-  <td class="has-details"><div id="macdnikkei"></div><span class="details">Nikkei</span></td>
-    <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=TVC%3ANI225','popup','width=1600,height=900')">Nikkei225 : JP</button></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-<tr>
-  <th scope="row">4</th>
-  <td><img src="https://cdn-icons-png.flaticon.com/128/197/197375.png" width="2.5%"> Hang Seng</td>
-  <td></td><td></td>
-  <td class="has-details"><div id="macdhangseng"></div><span class="details">Hang Seng</span></td>
-    <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=TVC%3AHSI','popup','width=1600,height=900')">HANSENG : CH</button></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-    <th scope="row">5</th>
-  <td><img src="https://cdn-icons-png.flaticon.com/128/197/197419.png" width="2.5%"> NIFTY</td>
-  <td></td><td></td>
-  <td class="has-details"><div id="macdnifty"></div><span class="details">NIFTY</span></td>
-    <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=NSE%3ANIFTY','popup','width=1600,height=900')">NIFTY50 : IN</button></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
 </tbody>
 </table>
 
 <div class="tabbing">
-<p style="text-align:right;"><button type="button" class="save" style="font-size:12pt;height:30px;width:130px;" onClick="window.location.reload();">save data</button> <br><a id="results">....ส่งออกข้อมูล....</a>
+<p style="text-align:right;"><button type="button" class="save" style="font-size:12pt;height:30px;width:130px;" onClick="window.location.reload();">save data</button> <br><a id="results">[ กดสำรองข้อมูล ]</a>
 </div>
 </form>
 <hr><i><font size='2'>" ปี 2028 จะเป็นจุดที่คริปโตรุ่งเรืองที่สุด " - <a href='https://artnp.github.io/predict-future-event' target="_blank">สคริปต์ทำนายอนาคต</a> / สคริปต์นี้หมดอายุปี 2030 ต้องเขียนโค้ดคำนวณดวงดาวเพิ่มใหม่</font></i>
@@ -1206,11 +1150,6 @@ document.getElementById("macdvet").innerHTML = '<center>-</center>'
 document.getElementById("macdbnb").innerHTML = '<center>-</center>'
 document.getElementById("macdltc").innerHTML = '<center>-</center>'
 document.getElementById("macdavax").innerHTML = '<center>-</center>'
-document.getElementById("macdnasdaq").innerHTML = '<center>-</center>'
-document.getElementById("macdstoxx").innerHTML = '<center>-</center>'
-document.getElementById("macdnikkei").innerHTML = '<center>-</center>'
-document.getElementById("macdhangseng").innerHTML = '<center>-</center>'
-document.getElementById("macdnifty").innerHTML = '<center>-</center>'
 const macdbtc = async () => {
    fetch("https://www.alphavantage.co/query?function=MACD&symbol=BTCUSD&interval=daily&series_type=open&apikey=K0D3JMCMLWT46XU4") 
   .then(response => response.json())
@@ -1435,76 +1374,6 @@ document.getElementById("macdavax").style.color = "#16D813"
 })
 }
 macdavax()
-const macdnasdaq = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=NDAQ&interval=daily&series_type=open&apikey=7F2AXV30EF83IY51") 
-  .then(response => response.json())
-  .then(data => {
-dataTA = data["Technical Analysis: MACD"]
-dataTA2 = Object.keys(dataTA)[0]
-macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
-if (macd > 0.00001) {
-document.getElementById("macdnasdaq").innerHTML = macd+'✓'
-document.getElementById("macdnasdaq").style.color = "#16D813"
-}
-})
-}
-macdnasdaq()
-const macdstoxx = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=STOXX&interval=daily&series_type=open&apikey=S0A2N4GHLTV6SIPF") 
-  .then(response => response.json())
-  .then(data => {
-dataTA = data["Technical Analysis: MACD"]
-dataTA2 = Object.keys(dataTA)[0]
-macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
-if (macd > 0.00001) {
-document.getElementById("macdstoxx").innerHTML = macd+'✓'
-document.getElementById("macdstoxx").style.color = "#16D813"
-}
-})
-}
-macdstoxx()
-const macdnikkei = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=BBEU&interval=daily&series_type=open&apikey=D8STTRHYX5DREJCT") 
-  .then(response => response.json())
-  .then(data => {
-dataTA = data["Technical Analysis: MACD"]
-dataTA2 = Object.keys(dataTA)[0]
-macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
-if (macd > 0.00001) {
-document.getElementById("macdnikkei").innerHTML = macd+'✓'
-document.getElementById("macdnikkei").style.color = "#16D813"
-}
-})
-}
-macdnikkei()
-const macdhangseng = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=KTEC&interval=daily&series_type=open&apikey=HM7MMM4HFRNYVNVN") 
-  .then(response => response.json())
-  .then(data => {
-dataTA = data["Technical Analysis: MACD"]
-dataTA2 = Object.keys(dataTA)[0]
-macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
-if (macd > 0.00001) {
-document.getElementById("macdhangseng").innerHTML = macd+'✓'
-document.getElementById("macdhangseng").style.color = "#16D813"
-}
-})
-}
-macdhangseng()
-const macdnifty = async () => {
-   fetch("https://www.alphavantage.co/query?function=MACD&symbol=NFTY&interval=daily&series_type=open&apikey=7F2AXV30EF83IY51") 
-  .then(response => response.json())
-  .then(data => {
-dataTA = data["Technical Analysis: MACD"]
-dataTA2 = Object.keys(dataTA)[0]
-macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
-if (macd > 0.00001) {
-document.getElementById("macdnifty").innerHTML = macd+'✓'
-document.getElementById("macdnifty").style.color = "#16D813"
-}
-})
-}
-macdnifty()
 
 function zodiacbtc(){
   document.getElementById("zodiac").innerHTML = 'Astrology'
