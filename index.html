@@ -288,6 +288,40 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/VETBUSD','popup','width=1600,height=900')">Short</button></td>
   <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AVETBUSD','popup','width=1600,height=900')">VET : BUSD</button></td>
 </tr>
+  <th scope="row">13</th>
+  <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/bnb.png" width="2%"> BNB</td>
+  <td class="has-details"><center>-</center><span class="details">BNB</span></td>
+  <td class="has-details"><center><div id="zodiacpredict13"></div></center><span class="details">BNB</span></td>
+  <td class="has-details"><div id="macdbnb"></div><span class="details">BNB</span></td>
+  <td class="has-details"><div id="getbnb"></div><span class="details">BNB</span></td>
+  <td class="has-details"><div id="lowbnb"><center>-</center></div><span class="details">BNB</span></td>
+  <td class="has-details"><div id="bnbpercent"></div><span class="details">BNB</span></td>
+  <td><input type="text" onFocus="this.select()" id="Amountbnb" style="font-size:8pt;height:20px;width:120px;"></td>
+  <td><input type="text" onFocus="this.select()" id="Investbnb" style="font-size:8pt;height:20px;width:70px;"></td>
+  <td class="has-details"><div id="Valuebnb"></div><span class="details">BNB</span></td>
+  <td class="has-details"><div id="Percentbnb"></div><span class="details">BNB</span></td>
+  <td class="has-details"><div id="Profitbnb"></div><span class="details">BNB</span></td>
+  <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=BNB','popup','width=1600,height=900')">Convert</button></td>
+  <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/BNBBUSD','popup','width=1600,height=900')">Short</button></td>
+  <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ABNBBUSD','popup','width=1600,height=900')">BNB : BUSD</button></td>
+</tr>
+  <th scope="row">14</th>
+  <td><img src="https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/128/color/ltc.png" width="2%"> LTC</td>
+  <td class="has-details"><center>-</center><span class="details">LTC</span></td>
+  <td class="has-details"><center><div id="zodiacpredict14"></div></center><span class="details">LTC</span></td>
+  <td class="has-details"><div id="macdltc"></div><span class="details">LTC</span></td>
+  <td class="has-details"><div id="getltc"></div><span class="details">LTC</span></td>
+  <td class="has-details"><div id="lowltc"><center>-</center></div><span class="details">LTC</span></td>
+  <td class="has-details"><div id="ltcpercent"></div><span class="details">LTC</span></td>
+  <td><input type="text" onFocus="this.select()" id="Amountltc" style="font-size:8pt;height:20px;width:120px;"></td>
+  <td><input type="text" onFocus="this.select()" id="Investltc" style="font-size:8pt;height:20px;width:70px;"></td>
+  <td class="has-details"><div id="Valueltc"></div><span class="details">LTC</span></td>
+  <td class="has-details"><div id="Percentltc"></div><span class="details">LTC</span></td>
+  <td class="has-details"><div id="Profitltc"></div><span class="details">LTC</span></td>
+  <td><button type="button" class="btn btn-success" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=LTC','popup','width=1600,height=900')">Convert</button></td>
+  <td><button type="button" class="btn btn-danger" style="font-size:8pt;" onclick="window.open('https://www.binance.com/en/futures/LTCBUSD','popup','width=1600,height=900')">Short</button></td>
+  <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ALTCBUSD','popup','width=1600,height=900')">LTC : BUSD</button></td>
+</tr>
 <tr>
  <th scope="row"></th>
   <td><div align="right">• • • • • • • • • • • แร่สวนระบบ • • • • • • • • • •</div></td>
@@ -306,7 +340,7 @@ onclick="window.open('https://www.tradingview.com/crypto-screener/','popup','wid
   <td></td>
   <td></td>
 </tr>
- <th scope="row">13</th>
+ <th scope="row">15</th>
   <td><img src="https://cryptologos.cc/logos/pax-gold-paxg-logo.png" width="1%"> PAXG</td>
   <td class="has-details"><center>-</center><span class="details">PAXG</span></td>
   <td class="has-details"><center>-</center><span class="details">PAXG</span></td>
@@ -407,6 +441,8 @@ if(localStorage) {
       var Amountshib = $("#Amountshib").val();
       var Amountada = $("#Amountada").val();
       var Amountpaxg = $("#Amountpaxg").val();
+      var Amountbnb = $("#Amountbnb").val();
+      var Amountltc = $("#Amountltc").val();
       var Amountvet = $("#Amountvet").val();
       var Investbtc = $("#Investbtc").val();
       var Investdot = $("#Investdot").val();
@@ -421,6 +457,8 @@ if(localStorage) {
       var Investada = $("#Investada").val();
       var Investpaxg = $("#Investpaxg").val();
       var Investvet = $("#Investvet").val();
+      var Investbnb = $("#Investbnb").val();
+      var Investltc = $("#Investltc").val();
 
     		localStorage.setItem("Amountbtc", Amountbtc);
         localStorage.setItem("Amountdot", Amountdot);
@@ -435,6 +473,8 @@ if(localStorage) {
         localStorage.setItem("Amountada", Amountada);
         localStorage.setItem("Amountpaxg", Amountpaxg);
         localStorage.setItem("Amountvet", Amountvet);
+        localStorage.setItem("Amountbnb", Amountbnb);
+        localStorage.setItem("Amountltc", Amountltc);
         localStorage.setItem("Investbtc", Investbtc);
         localStorage.setItem("Investdot", Investdot);
         localStorage.setItem("Investeth", Investeth);
@@ -448,6 +488,8 @@ if(localStorage) {
         localStorage.setItem("Investada", Investada);
         localStorage.setItem("Investpaxg", Investpaxg);
         localStorage.setItem("Investvet", Investvet);
+        localStorage.setItem("Investbnb", Investbnb);
+        localStorage.setItem("Investltc", Investltc);
 		});
 	});
 } 
@@ -465,6 +507,8 @@ Amountshib = eval((localStorage.getItem("Amountshib")).replace(',',''))
 Amountada = eval((localStorage.getItem("Amountada")).replace(',',''))
 Amountpaxg = eval((localStorage.getItem("Amountpaxg")).replace(',',''))
 Amountvet = eval((localStorage.getItem("Amountvet")).replace(',',''))
+Amountbnb = eval((localStorage.getItem("Amountbnb")).replace(',',''))
+Amountltc = eval((localStorage.getItem("Amountltc")).replace(',',''))
 Investbtc = eval((localStorage.getItem("Investbtc")).replace(',',''))
 Investdot = eval((localStorage.getItem("Investdot")).replace(',',''))
 Investeth = eval((localStorage.getItem("Investeth")).replace(',',''))
@@ -478,6 +522,8 @@ Investshib = eval((localStorage.getItem("Investshib")).replace(',',''))
 Investada = eval((localStorage.getItem("Investada")).replace(',',''))
 Investpaxg = eval((localStorage.getItem("Investpaxg")).replace(',',''))
 Investvet = eval((localStorage.getItem("Investvet")).replace(',',''))
+Investbnb = eval((localStorage.getItem("Investbnb")).replace(',',''))
+Investltc = eval((localStorage.getItem("Investltc")).replace(',',''))
 document.getElementById("Amountbtc").setAttribute('value' , Amountbtc||0 )
 document.getElementById("Amountdot").setAttribute('value' , Amountdot||0 )
 document.getElementById("Amounteth").setAttribute('value' , Amounteth||0 )
@@ -491,6 +537,8 @@ document.getElementById("Amountshib").setAttribute('value' , Amountshib||0 )
 document.getElementById("Amountada").setAttribute('value' , Amountada||0 )
 document.getElementById("Amountpaxg").setAttribute('value' , Amountpaxg||0 )
 document.getElementById("Amountvet").setAttribute('value' , Amountvet||0 )
+document.getElementById("Amountbnb").setAttribute('value' , Amountbnb||0 )
+document.getElementById("Amountltc").setAttribute('value' , Amountltc||0 )
 document.getElementById("Investbtc").setAttribute('value' , Investbtc||0 )
 document.getElementById("Investdot").setAttribute('value' , Investdot||0 )
 document.getElementById("Investeth").setAttribute('value' , Investeth||0 )
@@ -504,10 +552,12 @@ document.getElementById("Investshib").setAttribute('value' , Investshib||0 )
 document.getElementById("Investada").setAttribute('value' , Investada||0 )
 document.getElementById("Investpaxg").setAttribute('value' , Investpaxg||0 )
 document.getElementById("Investvet").setAttribute('value' , Investvet||0 )
+document.getElementById("Investbnb").setAttribute('value' , Investbnb||0 )
+document.getElementById("Investltc").setAttribute('value' , Investltc||0 )
 
 
 
-aryx = "Coin,Amount,Invest"+"\nBTC," + localStorage.getItem("Amountbtc")+","+localStorage.getItem("Investbtc")+"\nDOT,"+localStorage.getItem("Amountdot")+","+localStorage.getItem("Investdot")+"\nETH,"+localStorage.getItem("Amounteth")+","+localStorage.getItem("Investeth")+"\nUNI,"+localStorage.getItem("Amountuni")+","+localStorage.getItem("Investuni")+"\nXEC,"+localStorage.getItem("Amountxec")+","+localStorage.getItem("Investxec")+"\nLUNC,"+localStorage.getItem("Amountlunc")+","+localStorage.getItem("Investlunc")+"\nDOGE,"+localStorage.getItem("Amountdoge")+","+localStorage.getItem("Investdoge")+"\nXRP,"+localStorage.getItem("Amountxrp")+","+localStorage.getItem("Investxrp")+"\nSOL,"+localStorage.getItem("Amountsol")+","+localStorage.getItem("Investsol")+"\nSHIB,"+localStorage.getItem("Amountshib")+","+localStorage.getItem("Investshib")+"\nADA,"+localStorage.getItem("Amountada")+","+localStorage.getItem("Investada")+"\nPAXG,"+localStorage.getItem("Amountpaxg")+","+localStorage.getItem("Investpaxg")
+aryx = "Coin,Amount,Invest"+"\nBTC," + localStorage.getItem("Amountbtc")+","+localStorage.getItem("Investbtc")+"\nDOT,"+localStorage.getItem("Amountdot")+","+localStorage.getItem("Investdot")+"\nETH,"+localStorage.getItem("Amounteth")+","+localStorage.getItem("Investeth")+"\nUNI,"+localStorage.getItem("Amountuni")+","+localStorage.getItem("Investuni")+"\nXEC,"+localStorage.getItem("Amountxec")+","+localStorage.getItem("Investxec")+"\nLUNC,"+localStorage.getItem("Amountlunc")+","+localStorage.getItem("Investlunc")+"\nDOGE,"+localStorage.getItem("Amountdoge")+","+localStorage.getItem("Investdoge")+"\nXRP,"+localStorage.getItem("Amountxrp")+","+localStorage.getItem("Investxrp")+"\nSOL,"+localStorage.getItem("Amountsol")+","+localStorage.getItem("Investsol")+"\nSHIB,"+localStorage.getItem("Amountshib")+","+localStorage.getItem("Investshib")+"\nADA,"+localStorage.getItem("Amountada")+","+localStorage.getItem("Investada")+"\nPAXG,"+localStorage.getItem("Amountpaxg")+","+localStorage.getItem("Investpaxg")+"\nBNB,"+localStorage.getItem("Amountbnb")+","+localStorage.getItem("Investbnb")+"\nLTC,"+localStorage.getItem("Amountltc")+","+localStorage.getItem("Investltc")
 blob = new Blob([aryx], {type: "text/csv"})
 urlx = URL.createObjectURL(blob)
 a = document.querySelector("#results");
@@ -840,6 +890,54 @@ const getvet = async () => {
     document.getElementById("Percentvet").innerHTML = "<u>"+((((price*Amountvet)*100)/Investvet)-100||0).toFixed(0)+"%</u>"
 })
 }
+const getbnb = async () => {
+   fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=BNBBUSD")
+  .then(response => response.json())
+  .then(data => {
+    price = Number(data.askPrice).toFixed(7)
+    document.getElementById("getbnb").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("bnbpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
+    } else {
+      document.getElementById("bnbpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#E5260A")
+    }
+    profit = ((price*Amountbnb)-Investbnb).toFixed(1)
+    if (profit > 0){
+      profit = profit.fontcolor("lime")+'😀'
+    } else if (profit == 0){
+      profit = profit.fontcolor("white")
+    } else {
+      profit = profit.fontcolor("red")+'😡'
+    }
+    document.getElementById("Profitbnb").innerHTML = profit
+    document.getElementById("Valuebnb").innerHTML = (price*Amountvet).toFixed(0)+"$"
+    document.getElementById("Percentbnb").innerHTML = "<u>"+((((price*Amountbnb)*100)/Investbnb)-100||0).toFixed(0)+"%</u>"
+})
+}
+const getltc = async () => {
+   fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=LTCBUSD")
+  .then(response => response.json())
+  .then(data => {
+    price = Number(data.askPrice).toFixed(7)
+    document.getElementById("getltc").innerHTML = price
+        if (data.priceChangePercent > 0){
+      document.getElementById("ltcpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
+    } else {
+      document.getElementById("ltcpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%').fontcolor("#E5260A")
+    }
+    profit = ((price*Amountltc)-Investltc).toFixed(1)
+    if (profit > 0){
+      profit = profit.fontcolor("lime")+'😀'
+    } else if (profit == 0){
+      profit = profit.fontcolor("white")
+    } else {
+      profit = profit.fontcolor("red")+'😡'
+    }
+    document.getElementById("Profitltc").innerHTML = profit
+    document.getElementById("Valueltc").innerHTML = (price*Amountltc).toFixed(0)+"$"
+    document.getElementById("Percentltc").innerHTML = "<u>"+((((price*Amountltc)*100)/Investltc)-100||0).toFixed(0)+"%</u>"
+})
+}
 getbtc()
 getdot()
 geteth()
@@ -853,10 +951,12 @@ getshib()
 getada()
 getpaxg()
 getvet()
+getbnb()
+getltc()
 
  tcount=setInterval(function(){
    tcount++
-   if (tcount==20) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol()|getshib()|getada()|getpaxg()|getvet(); tcount=0}
+   if (tcount==20) {getbtc()|getdot()|geteth()|getuni()|getxec()|getlunc()|getdoge()|getxrp()|getsol()|getshib()|getada()|getpaxg()|getvet()|getbnb()|getltc(); tcount=0}
  },2000);
 
 function solar(){
@@ -1053,6 +1153,8 @@ document.getElementById("macdshib").innerHTML = '<center>-</center>'
 document.getElementById("macdada").innerHTML = '<center>-</center>'
 document.getElementById("macdpaxg").innerHTML = '<center>-</center>'
 document.getElementById("macdvet").innerHTML = '<center>-</center>'
+document.getElementById("macdbnb").innerHTML = '<center>-</center>'
+document.getElementById("macdltc").innerHTML = '<center>-</center>'
 document.getElementById("macdnasdaq").innerHTML = '<center>-</center>'
 document.getElementById("macdstoxx").innerHTML = '<center>-</center>'
 document.getElementById("macdnikkei").innerHTML = '<center>-</center>'
@@ -1240,6 +1342,34 @@ document.getElementById("macdvet").style.color = "#16D813"
 })
 }
 macdvet()
+const macdbnb = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=BNBBUSD&interval=daily&series_type=open&apikey=S0A2N4GHLTV6SIPF") 
+  .then(response => response.json())
+  .then(data => {
+dataTA = data["Technical Analysis: MACD"]
+dataTA2 = Object.keys(dataTA)[0]
+macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
+if (macd > 0.00001) {
+document.getElementById("macdbnb").innerHTML = macd+'✓'
+document.getElementById("macdbnb").style.color = "#16D813"
+}
+})
+}
+macdbnb()
+const macdltc = async () => {
+   fetch("https://www.alphavantage.co/query?function=MACD&symbol=LTCBUSD&interval=daily&series_type=open&apikey=GBXYRM983I5T83GK") 
+  .then(response => response.json())
+  .then(data => {
+dataTA = data["Technical Analysis: MACD"]
+dataTA2 = Object.keys(dataTA)[0]
+macd = data["Technical Analysis: MACD"][dataTA2].MACD_Signal
+if (macd > 0.00001) {
+document.getElementById("macdltc").innerHTML = macd+'✓'
+document.getElementById("macdltc").style.color = "#16D813"
+}
+})
+}
+macdltc()
 const macdnasdaq = async () => {
    fetch("https://www.alphavantage.co/query?function=MACD&symbol=NDAQ&interval=daily&series_type=open&apikey=7F2AXV30EF83IY51") 
   .then(response => response.json())
@@ -1324,7 +1454,9 @@ function zodiacbtc(){
   document.getElementById("zodiacpredict9").innerHTML = '-'
   document.getElementById("zodiacpredict10").innerHTML = '-'
   document.getElementById("zodiacpredict11").innerHTML = '-'
-    document.getElementById("zodiacpredict12").innerHTML = '-'
+  document.getElementById("zodiacpredict12").innerHTML = '-'
+  document.getElementById("zodiacpredict13").innerHTML = '-'
+  document.getElementById("zodiacpredict14").innerHTML = '-'
   m = new Date().getMonth() 
   d = new Date().getDate()
   y = new Date().getFullYear()
@@ -2264,6 +2396,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 9-1 && d === 3 && y === 2023 || m === 9-1 && d === 4 && y === 2023){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2277,6 +2412,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 9-1 && d === 24 && y === 2023 || m === 9-1 && d === 25 && y === 2023){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2290,6 +2428,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 12-1 && d === 6 && y === 2023 || m === 12-1 && d === 7 && y === 2023){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2303,6 +2444,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 12-1 && d === 17 && y === 2023 || m === 12-1 && d === 18 && y === 2023){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2316,6 +2460,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 1-1 && d === 18 && y === 2024 || m === 1-1 && d === 19 && y === 2024){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2329,6 +2476,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 10-1 && d === 7 && y === 2024 || m === 10-1 && d === 8 && y === 2024){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2342,6 +2492,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 2-1 && d === 2 && y === 2025 || m === 2-1 && d === 3 && y === 2025){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2355,6 +2508,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 10-1 && d === 23 && y === 2025 || m === 10-1 && d === 24 && y === 2025){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2368,6 +2524,10 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+    document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  
   } else if (m === 11-1 && d === 21 && y === 2025 || m === 11-1 && d === 22 && y === 2025){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2381,6 +2541,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   } else if (m === 12-1 && d === 5 && y === 2025 || m === 12-1 && d === 6 && y === 2025){
   document.getElementById("zodiac").innerHTML = '☿ Δ ♃'
   document.getElementById("zodiacpredict1").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
@@ -2394,6 +2557,9 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   document.getElementById("zodiacpredict9").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict10").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   document.getElementById("zodiacpredict11").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict12").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict13").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
+  document.getElementById("zodiacpredict14").innerHTML = 'จะลงย่อย ↓'.fontcolor("red")
   }
 }
 zodiacbtc()
