@@ -350,7 +350,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
 <td class="has-details"><div id="getapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="lowapt"><center>-</center></div><span class="details">APT</span></td>
 <td class="has-details"><div id="aptpercent"></div><span class="details">APT</span></td>
-<td><input type="text" onFocus="this.select()" id="Amountapt" style="font-size:8pt;height:20px;width:120px;" value="100"></td>
+<td><input type="text" onFocus="this.select()" id="Amountapt" style="font-size:8pt;height:20px;width:120px;"></td>
 <td><input type="text" onFocus="this.select()" id="Investapt" style="font-size:8pt;height:20px;width:70px;"></td>
 <td class="has-details"><div id="Valueapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="Percentapt"></div><span class="details">APT</span></td>
@@ -382,8 +382,8 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </td>
-  <td class="has-details"><center>100$</center><span class="details">PAXG</span></td>
-  <td class="has-details"><span class="details">PAXG</span><center><font color="#ECF70E"><div id="goldcon"></div></font></center></td>
+  <td class="has-details"><center>100$</center><span class="details">$=PAXG</span></td>
+  <td class="has-details"><center>=<input type="text" onFocus="this.select()" id="goldcon" style="font-size:12pt;height:20px;width:50px;"></font></center></td>
   <td class="has-details"><div id="macdpaxg"></div><span class="details">PAXG</span></td>
   <td class="has-details"><div id="getpaxg"></div><span class="details">PAXG</span></td>
   <td class="has-details"><span class="details">PAXG</span></td>
@@ -566,7 +566,28 @@ a = document.querySelector("#results");
 a.href = urlx
 a.download = "export.csv"
     
+function copyToClipboard(e) {
+    selectText(e);
+    document.execCommand("copy");
+}
 
+function selectText(e) {
+    e = document.getElementById(e);
+
+    if (document.body.createTextRange) {
+        const r = document.body.createTextRange();
+        r.moveToElementText(e);
+        r.select();
+    } else if (window.getSelection) {
+        const s = window.getSelection();
+        const r = document.createRange();
+        r.selectNodeContents(e);
+        s.removeAllRanges();
+        s.addRange(r);
+    } else {
+        console.warn("Could not select text in "+e+": Unsupported browser.");
+    }
+}
 
   const getbtc = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=BTCBUSD")
@@ -866,7 +887,7 @@ const getpaxg = async () => {
     document.getElementById("Profitpaxg").innerHTML = profit
     document.getElementById("Valuepaxg").innerHTML = (price*Amountpaxg).toFixed(0)+"$"
     document.getElementById("Percentpaxg").innerHTML = "<u>"+((((price*Amountpaxg)*100)/Investpaxg)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("goldcon").innerHTML = (100/data.askPrice).toFixed(3)
+    document.getElementById("goldcon").value = (100/data.askPrice).toFixed(3)
   })
 }
 const getvet = async () => {
