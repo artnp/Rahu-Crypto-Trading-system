@@ -45,6 +45,8 @@ a { color: #FF0000;
         <th scope="col"><center>[ <font color="orange">Solar Eclipse</font> ]</center></th>
         <th scope="col"><center>[ <font color="red">Lunar Eclipse</font> ]</center></th>
         <th scope="col"><center>[ <font color="blood">Mercury Retrograde</font> ]</center></th>
+        <th scope="col"><center>ema</center></th>
+        <th scope="col"><center>zlema</center></th>
       </tr>
     </thead>
     <tbody>
@@ -52,6 +54,8 @@ a { color: #FF0000;
         <td><center><h1><div id="solar"></div></h1>days</center></td>
         <td><center><h1><div id="lunar"></div></h1>days</center></td>
         <td><center><h1><div id="mercury"></div></h1>days</center></td>
+        <td id="ema"></td>
+        <td id="zlema"></td>
       </tr>
   
     </tbody>
@@ -1950,6 +1954,40 @@ if (m === 7-1 && d === 9 && y === 2023 || m === 7-1 && d === 10 && y === 2023){
   }
 }
 zodiacbtc()
+
+const Hema = async () => {
+   fetch("https://api.taapi.io/ema?secret=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbHVlIjoiNjNiMmUwMjdmYzVhOGFkZmVjN2ExZTYxIiwiaWF0IjoxNjczNzExNDMwLCJleHAiOjMzMTc4MTc1NDMwfQ.2oD19d6gpe-I6hHehXUaSMmH-EAAvoIUFT2UAdV5ffA&exchange=binance&symbol=BTC/USDT&interval=1d")
+  .then(response => response.json())
+  .then(data => {
+    if (data.value >= 0){
+      document.getElementById('ema').style.backgroundColor='green'
+      document.getElementById('ema').innerHTML = '<center><h2>ถือ</h2>' + (data.value).toFixed(1) + '</center>'
+    } else if (data.value <= 0){
+      document.getElementById('ema').style.backgroundColor='red'
+      document.getElementById('ema').innerHTML = '<center><h2>ขาย</h2></center>'
+    } else {
+      document.getElementById('ema').innerHTML = '<center>คำสั่งไม่มา</center>'
+    }
+  })
+}
+Hema()
+
+const Hzlema = async () => {
+   fetch("https://api.taapi.io/zlema?secret=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbHVlIjoiNjNjMmQ1MWRmYzVhOGFkZmVjMWVkNzIxIiwiaWF0IjoxNjczNzEyOTM2LCJleHAiOjMzMTc4MTc2OTM2fQ.gvP7g_KMdt9uIBY7emHwb6qllsQaQM321KNhdzc0a8c&exchange=binance&symbol=BTC/USDT&interval=1d&period=50")
+  .then(response => response.json())
+  .then(data => {
+    if (data.value >= 0){
+      document.getElementById('zlema').style.backgroundColor='green'
+      document.getElementById('zlema').innerHTML = '<center><h2>ถือ</h2>' + (data.value).toFixed(1) + '</center>'
+    } else if (data.value <= 0) {
+      document.getElementById('zlema').style.backgroundColor='red'
+      document.getElementById('zlema').innerHTML = '<center><h2>ขาย</h2></center>'
+    } else {
+      document.getElementById('zlema').innerHTML = '<center>คำสั่งไม่มา</center>'
+    }
+  })
+}
+Hzlema()
 </script>
 </body>
 </html>
