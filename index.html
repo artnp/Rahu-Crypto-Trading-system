@@ -937,7 +937,7 @@ const getbnb = async () => {
       profit = profit.fontcolor("red")+'😡'
     }
     document.getElementById("Profitbnb").innerHTML = profit
-    document.getElementById("Valuebnb").innerHTML = (price*Amountvet).toFixed(0)+"$"
+    document.getElementById("Valuebnb").innerHTML = (price*Amountbnb).toFixed(0)+"$"
     document.getElementById("Percentbnb").innerHTML = "<u>"+((((price*Amountbnb)*100)/Investbnb)-100||0).toFixed(0)+"%</u>"
 })
 }
