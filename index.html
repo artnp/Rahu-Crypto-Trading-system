@@ -1244,26 +1244,9 @@ solar()
 lunar()
 mercury()
 
-document.getElementById("macdbtc").innerHTML = '<center>-</center>'
-document.getElementById("macddot").innerHTML = '<center>-</center>'
-document.getElementById("macdeth").innerHTML = '<center>-</center>'
-document.getElementById("macduni").innerHTML = '<center>-</center>'
-document.getElementById("macdxec").innerHTML = '<center>-</center>'
-document.getElementById("macdlunc").innerHTML = '<center>-</center>'
-document.getElementById("macddoge").innerHTML = '<center>-</center>'
-document.getElementById("macdxrp").innerHTML = '<center>-</center>'
-document.getElementById("macdsol").innerHTML = '<center>-</center>'
-document.getElementById("macdshib").innerHTML = '<center>-</center>'
-document.getElementById("macdada").innerHTML = '<center>-</center>'
-document.getElementById("macdpaxg").innerHTML = '<center>-</center>'
-document.getElementById("macdvet").innerHTML = '<center>-</center>'
-document.getElementById("macdbnb").innerHTML = '<center>-</center>'
-document.getElementById("macdltc").innerHTML = '<center>-</center>'
-document.getElementById("macdavax").innerHTML = '<center>-</center>'
-document.getElementById("macdapt").innerHTML = '<center>-</center>'
-document.getElementById("macdop").innerHTML = '<center>-</center>'
+
 function technical(){
-index = ["BTC", "DOT", "ETH", "UNI", "XEC", "LUNC", "DOGE", "XRP", "SOL", "SHIB", "ADA", "VET", "BNB", "LTC", "AVAX", "APT", "OP"]
+index = ["BTC", "DOT", "ETH", "UNI", "XEC", "LUNC", "DOGE", "XRP", "SOL", "SHIB", "ADA", "VET", "BNB", "LTC", "AVAX", "APT", "OP", "PAXG"]
 requests=new Array(index.length);
 for (let i = 0; i < index.length; i++) {
     var url = "https://api.binance.com/api/v3/klines?symbol=" + index[i] +'BUSD&interval=1d&limit=' + 27
