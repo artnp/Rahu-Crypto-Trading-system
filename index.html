@@ -1338,7 +1338,14 @@ close26 = Number(result[25][4])
 function calculateUptrend(closingPrices, maPeriod, rsiPeriod) {
   const ma = calculateMA(closingPrices, maPeriod);
   const rsi = calculateRSI(closingPrices, rsiPeriod);
-  document.getElementById("rsi"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+ (rsi.toFixed(0)).fontcolor("orange") +'</center>'
+  if (rsi < 50){
+    document.getElementById("rsi"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+ (rsi.toFixed(0)).fontcolor("green") +'</center>'
+  } else if (rsi > 90){
+    document.getElementById("rsi"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+ (rsi.toFixed(0)).fontcolor("red") +'</center>'
+  } else {
+    document.getElementById("rsi"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+ (rsi.toFixed(0)).fontcolor("orange") +'</center>'
+  }
+  
   const uptrend = (ma > 0) && (rsi > 50);
   return uptrend;
 }
