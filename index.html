@@ -416,7 +416,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
 </tr>
 <tr>
  <th scope="row"></th>
-  <td><div align="right">• • • • • • • • • • • แร่สวนระบบ • • • • • • • • • •</div></td>
+  <td><div align="right">• • • • • • • แร่สวนระบบ • • • • • •</div></td>
   <td></td>
   <td></td>
   <td></td>
@@ -1336,8 +1336,8 @@ close26 = Number(result[25][4])
         }
 /////////////////////////////////////////////////////////////////////////////////////////////////////คำนวณ RSI ตลาดหมี-กระทิง
 function calculateUptrend(closingPrices, maPeriod, rsiPeriod) {
-  const ma = calculateMA(closingPrices, maPeriod);
-  const rsi = calculateRSI(closingPrices, rsiPeriod);
+  const ma = calculateMA(closingPrices, maPeriod)
+  const rsi = calculateRSI(closingPrices, rsiPeriod)
   if (rsi < 50){
     document.getElementById("rsi"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+ (rsi.toFixed(0)).fontcolor("green") +'</center>'
   } else if (rsi > 90){
@@ -1345,38 +1345,37 @@ function calculateUptrend(closingPrices, maPeriod, rsiPeriod) {
   } else {
     document.getElementById("rsi"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+ (rsi.toFixed(0)).fontcolor("orange") +'</center>'
   }
-  
   const uptrend = (ma > 0) && (rsi > 50);
   return uptrend;
 }
 function calculateMA(closingPrices, period) {
-  let sum = 0;
+  let sum = 0
   for (let i = 0; i < period; i++) {
-    sum += closingPrices[i];
+    sum += closingPrices[i]
   }
   const ma = sum / period;
-  return ma;
+  return ma
 }
 function calculateRSI(closingPrices, period) {
   let avgUpwardChange = 0;
   for (let i = 1; i < closingPrices.length; i++) {
-    avgUpwardChange += Math.max(0, closingPrices[i] - closingPrices[i - 1]);
+    avgUpwardChange += Math.max(0, closingPrices[i] - closingPrices[i - 1])
   }
   avgUpwardChange /= closingPrices.length;
   let avgDownwardChange = 0;
   for (let i = 1; i < closingPrices.length; i++) {
-    avgDownwardChange += Math.max(0, closingPrices[i - 1] - closingPrices[i]);
+    avgDownwardChange += Math.max(0, closingPrices[i - 1] - closingPrices[i])
   }
-  avgDownwardChange /= closingPrices.length;
-  const rsi = 100 - (100 / (1 + (avgUpwardChange / avgDownwardChange)));
-  return rsi;
+  avgDownwardChange /= closingPrices.length
+  const rsi = 100 - (100 / (1 + (avgUpwardChange / avgDownwardChange)))
+  return rsi
 }
 const closingPrices = [
 close1, close2, close3, close4, close5, close5, close7, close8, close9, close10,
 close11, close12, close13, close14, close15, close16, close17, close18, close19, close20, close21, close22, close23, close24, close25
-];
-const maPeriod = 25;
-const rsiPeriod = 25;
+]
+const maPeriod = 25
+const rsiPeriod = 25
 const uptrend = calculateUptrend(closingPrices, maPeriod, rsiPeriod);
 if (uptrend === true){
 
@@ -1384,33 +1383,18 @@ if (uptrend === true){
 } else if (uptrend === false){
   document.getElementById("market"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+'ขาลง'.fontcolor("red")+'</center>'
 }
-
-
-
 }
-    requests[i].send();
+    requests[i].send()
 }
 } technical()
 
 function zodiacbtc(){
   document.getElementById("zodiac").innerHTML = 'Astrology'
-  document.getElementById("zodiacpredict1").innerHTML = '-'
-  document.getElementById("zodiacpredict2").innerHTML = '-'
-  document.getElementById("zodiacpredict3").innerHTML = '-'
-  document.getElementById("zodiacpredict4").innerHTML = '-'
-  document.getElementById("zodiacpredict5").innerHTML = '-'
-  document.getElementById("zodiacpredict6").innerHTML = '-'
-  document.getElementById("zodiacpredict7").innerHTML = '-'
-  document.getElementById("zodiacpredict8").innerHTML = '-'
-  document.getElementById("zodiacpredict9").innerHTML = '-'
-  document.getElementById("zodiacpredict10").innerHTML = '-'
-  document.getElementById("zodiacpredict11").innerHTML = '-'
-  document.getElementById("zodiacpredict12").innerHTML = '-'
-  document.getElementById("zodiacpredict13").innerHTML = '-'
-  document.getElementById("zodiacpredict14").innerHTML = '-'
-  document.getElementById("zodiacpredict15").innerHTML = '-'
-  document.getElementById("zodiacpredict16").innerHTML = '-'
-  document.getElementById("zodiacpredict17").innerHTML = '-'
+  for (let i = 1; i < cryptoCoin.length; i++) {
+    document.getElementById("zodiacpredict"+[i]).innerHTML = '-'
+  }
+  
+ 
   m = new Date().getMonth() 
   d = new Date().getDate()
   y = new Date().getFullYear()
