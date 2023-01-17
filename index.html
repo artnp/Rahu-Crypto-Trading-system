@@ -624,7 +624,7 @@ a.download = "export.csv"
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=BTCBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(2)
+    price = Number(data.askPrice).toFixed(0)
     document.getElementById("getbtc").innerHTML = price
     if (data.priceChangePercent > 0){
       document.getElementById("btcpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -674,7 +674,7 @@ const geteth = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(2)
+    price = Number(data.askPrice).toFixed(0)
     document.getElementById("geteth").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("ethpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -724,7 +724,7 @@ const getxec = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=XECBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(5)
+    price = Number(data.askPrice).toFixed(6)
     document.getElementById("getxec").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("xecpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -850,7 +850,7 @@ const getshib = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=SHIBBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(5)
+    price = Number(data.askPrice).toFixed(6)
     document.getElementById("getshib").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("shibpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
