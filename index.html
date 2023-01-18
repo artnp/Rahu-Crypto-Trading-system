@@ -85,6 +85,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
     <th scope="col"><div id="zodiac"></div></th>
     <th scope="col">Market</th>
     <th scope="col">MACD</th>
+    <th scope="col">Guppy</th>
     <th scope="col">RSI</th>
     <th scope="col">Price</th>
     <th scope="col">24hr</th>
@@ -106,6 +107,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict1"></div></center><span class="details">BTC</span></td>
       <td class="has-details"><div id="marketbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="macdbtc"></div><span class="details">BTC</span></td>
+      <td class="has-details"><div id="guppybtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="rsibtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="getbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="btcpercent"></div><span class="details">BTC</span></td>
@@ -125,6 +127,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict2"></div></center><span class="details">DOT</span></td>
       <td class="has-details"><div id="marketdot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="macddot"></div><span class="details">DOT</span></td>
+      <td class="has-details"><div id="guppydot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="rsidot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="getdot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="dotpercent"></div><span class="details">DOT</span></td>
@@ -144,6 +147,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict3"></div></center><span class="details">ETH</span></td>
       <td class="has-details"><div id="marketeth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="macdeth"></div><span class="details">ETH</span></td>
+      <td class="has-details"><div id="guppyeth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="rsieth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="geteth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="ethpercent"></div><span class="details">ETH</span></td>
@@ -163,6 +167,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict4"></div></center><span class="details">UNI</span></td>
       <td class="has-details"><div id="marketuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="macduni"></div><span class="details">UNI</span></td>
+      <td class="has-details"><div id="guppyuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="rsiuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="getuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="unipercent"></div><span class="details">UNI</span></td>
@@ -182,6 +187,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict5"></div></center><span class="details">XEC</span></td>
       <td class="has-details"><div id="marketxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="macdxec"></div><span class="details">XEC</span></td>
+      <td class="has-details"><div id="guppyxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="rsixec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="getxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="xecpercent"></div><span class="details">XEC</span></td>
@@ -200,6 +206,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict6"></div></center><span class="details">LUNC</span></td>
       <td class="has-details"><div id="marketlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="macdlunc"></div><span class="details">LUNC</span></td>
+      <td class="has-details"><div id="guppyxec"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="rsilunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="getlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="luncpercent"></div><span class="details">LUNC</span></td>
@@ -218,6 +225,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict7"></div></center><span class="details">DOGE</span></td>
       <td class="has-details"><div id="marketdoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="macddoge"></div><span class="details">DOGE</span></td>
+      <td class="has-details"><div id="guppydoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="rsidoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="getdoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="dogepercent"></div><span class="details">DOGE</span></td>
@@ -236,6 +244,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict8"></div></center><span class="details">XRP</span></td>
       <td class="has-details"><div id="marketxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="macdxrp"></div><span class="details">XRP</span></td>
+      <td class="has-details"><div id="guppyxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="rsixrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="getxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="xrppercent"></div><span class="details">XRP</span></td>
@@ -254,6 +263,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><center><div id="zodiacpredict9"></div></center><span class="details">SOL</span></td>
       <td class="has-details"><div id="marketsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="macdsol"></div><span class="details">SOL</span></td>
+      <td class="has-details"><div id="guppysol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="rsisol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="getsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="solpercent"></div><span class="details">SOL</span></td>
@@ -272,6 +282,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
     <td class="has-details"><center><div id="zodiacpredict10"></div></center><span class="details">SHIB</span></td>
     <td class="has-details"><div id="marketshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="macdshib"></div><span class="details">SHIB</span></td>
+    <td class="has-details"><div id="guppyshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="rsishib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="getshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="shibpercent"></div><span class="details">SHIB</span></td>
@@ -290,6 +301,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><center><div id="zodiacpredict11"></div></center><span class="details">ADA</span></td>
   <td class="has-details"><div id="marketada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="macdada"></div><span class="details">ADA</span></td>
+  <td class="has-details"><div id="guppyada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="rsiada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="getada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="adapercent"></div><span class="details">ADA</span></td>
@@ -308,6 +320,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><center><div id="zodiacpredict12"></div></center><span class="details">VET</span></td>
   <td class="has-details"><div id="marketvet"></div><span class="details">VET</span></td>
   <td class="has-details"><div id="macdvet"></div><span class="details">VET</span></td>
+  <td class="has-details"><div id="guppyvet"></div><span class="details">VET</span></td>
   <td class="has-details"><div id="rsivet"></div><span class="details">VET</span></td>
   <td class="has-details"><div id="getvet"></div><span class="details">VET</span></td>
   <td class="has-details"><div id="vetpercent"></div><span class="details">VET</span></td>
@@ -326,6 +339,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><center><div id="zodiacpredict13"></div></center><span class="details">BNB</span></td>
   <td class="has-details"><div id="marketbnb"></div><span class="details">BNB</span></td>
   <td class="has-details"><div id="macdbnb"></div><span class="details">BNB</span></td>
+  <td class="has-details"><div id="guppybnb"></div><span class="details">BNB</span></td>
   <td class="has-details"><div id="rsibnb"></div><span class="details">BNB</span></td>
   <td class="has-details"><div id="getbnb"></div><span class="details">BNB</span></td>
   <td class="has-details"><div id="bnbpercent"></div><span class="details">BNB</span></td>
@@ -344,6 +358,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><center><div id="zodiacpredict14"></div></center><span class="details">LTC</span></td>
   <td class="has-details"><div id="marketltc"></div><span class="details">LTC</span></td>
   <td class="has-details"><div id="macdltc"></div><span class="details">LTC</span></td>
+  <td class="has-details"><div id="guppyltc"></div><span class="details">LTC</span></td>
   <td class="has-details"><div id="rsiltc"></div><span class="details">LTC</span></td>
   <td class="has-details"><div id="getltc"></div><span class="details">LTC</span></td>
   <td class="has-details"><div id="ltcpercent"></div><span class="details">LTC</span></td>
@@ -362,6 +377,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><center><div id="zodiacpredict15"></div></center><span class="details">AVAX</span></td>
   <td class="has-details"><div id="marketavax"></div><span class="details">AVAX</span></td>
   <td class="has-details"><div id="macdavax"></div><span class="details">AVAX</span></td>
+  <td class="has-details"><div id="guppyavax"></div><span class="details">AVAX</span></td>
   <td class="has-details"><div id="rsiavax"></div><span class="details">AVAX</span></td>
   <td class="has-details"><div id="getavax"></div><span class="details">AVAX</span></td>
   <td class="has-details"><div id="avaxpercent"></div><span class="details">AVAX</span></td>
@@ -380,6 +396,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
 <td class="has-details"><center><div id="zodiacpredict16"></div></center><span class="details">APT</span></td>
 <td class="has-details"><div id="marketapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="macdapt"></div><span class="details">APT</span></td>
+<td class="has-details"><div id="guppyapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="rsiapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="getapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="aptpercent"></div><span class="details">APT</span></td>
@@ -398,6 +415,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
 <td class="has-details"><center><div id="zodiacpredict17"></div></center><span class="details">OP</span></td>
 <td class="has-details"><div id="marketop"></div><span class="details">OP</span></td>
 <td class="has-details"><div id="macdop"></div><span class="details">OP</span></td>
+<td class="has-details"><div id="guppyop"></div><span class="details">OP</span></td>
 <td class="has-details"><div id="rsiop"></div><span class="details">OP</span></td>
 <td class="has-details"><div id="getop"></div><span class="details">OP</span></td>
 <td class="has-details"><div id="oppercent"></div><span class="details">OP</span></td>
@@ -423,6 +441,7 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><center>=<input type="text" onFocus="this.select()" id="goldcon" style="font-size:12pt;height:20px;width:50px;"></font></center></td>
   <td class="has-details"><div id="marketpaxg"></div><span class="details">PAXG</span></td>
   <td class="has-details"><div id="macdpaxg"></div><span class="details">PAXG</span></td>
+  <td class="has-details"><div id="guppypaxg"></div><span class="details">PAXG</span></td>
   <td class="has-details"><div id="rsipaxg"></div><span class="details">PAXG</span></td>
   <td class="has-details"><div id="getpaxg"></div><span class="details">PAXG</span></td>
   <td class="has-details"><div id="paxgpercent"></div><span class="details">PAXG</span></td>
@@ -637,7 +656,6 @@ a.download = "export.csv"
     document.getElementById("Profitbtc").innerHTML = profit
     document.getElementById("Valuebtc").innerHTML = (price*Amountbtc).toFixed(0)+"$"
     document.getElementById("Percentbtc").innerHTML = "<u>"+((((price*Amountbtc)*100)/Investbtc)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowbtc").innerHTML = '9470'.fontcolor("grey")
 })
 }
 const getdot = async () => {
@@ -662,7 +680,6 @@ const getdot = async () => {
     document.getElementById("Profitdot").innerHTML = profit
     document.getElementById("Valuedot").innerHTML = (price*Amountdot).toFixed(0)+"$"
     document.getElementById("Percentdot").innerHTML = "<u>"+((((price*Amountdot)*100)/Investdot)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowdot").innerHTML = '2.1'.fontcolor("grey")
 })
 }
 const geteth = async () => {
@@ -687,7 +704,6 @@ const geteth = async () => {
     document.getElementById("Profiteth").innerHTML = profit
     document.getElementById("Valueeth").innerHTML = (price*Amounteth).toFixed(0)+"$"
     document.getElementById("Percenteth").innerHTML = "<u>"+((((price*Amounteth)*100)/Investeth)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("loweth").innerHTML = '314'.fontcolor("grey")
 })
 }
 const getuni = async () => {
@@ -712,7 +728,6 @@ const getuni = async () => {
     document.getElementById("Profituni").innerHTML = profit
     document.getElementById("Valueuni").innerHTML = (price*Amountuni).toFixed(0)+"$"
     document.getElementById("Percentuni").innerHTML = "<u>"+((((price*Amountuni)*100)/Investuni)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowuni").innerHTML = '0.27'.fontcolor("grey")
 })
 }
 const getxec = async () => {
@@ -737,7 +752,6 @@ const getxec = async () => {
     document.getElementById("Profitxec").innerHTML = profit
     document.getElementById("Valuexec").innerHTML = (price*Amountxec).toFixed(0)+"$"
     document.getElementById("Percentxec").innerHTML = "<u>"+((((price*Amountxec)*100)/Investxec)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowxec").innerHTML = '0.000003'.fontcolor("grey")
 })
 }
 const getlunc = async () => {
@@ -761,9 +775,7 @@ const getlunc = async () => {
     }
     document.getElementById("Profitlunc").innerHTML = profit
     document.getElementById("Valuelunc").innerHTML = (price*Amountlunc).toFixed(0)+"$"
-    document.getElementById("Percentlunc").innerHTML = "<u>"+((((price*Amountlunc)*100)/Investlunc)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowlunc").innerHTML = '0.00010'.fontcolor("grey")
-    
+    document.getElementById("Percentlunc").innerHTML = "<u>"+((((price*Amountlunc)*100)/Investlunc)-100||0).toFixed(0)+"%</u>"    
 })
 }
 const getdoge = async () => {
@@ -788,7 +800,6 @@ const getdoge = async () => {
     document.getElementById("Profitdoge").innerHTML = profit
     document.getElementById("Valuedoge").innerHTML = (price*Amountdoge).toFixed(0)+"$"
     document.getElementById("Percentdoge").innerHTML = "<u>"+((((price*Amountdoge)*100)/Investdoge)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowdoge").innerHTML = '0.03'.fontcolor("grey")
 })
 }
 const getxrp = async () => {
@@ -813,7 +824,6 @@ const getxrp = async () => {
     document.getElementById("Profitxrp").innerHTML = profit
     document.getElementById("Valuexrp").innerHTML = (price*Amountxrp).toFixed(0)+"$"
     document.getElementById("Percentxrp").innerHTML = "<u>"+((((price*Amountxrp)*100)/Investxrp)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowxrp").innerHTML = '0.28'.fontcolor("grey")
 })
 }
 const getsol = async () => {
@@ -838,7 +848,6 @@ const getsol = async () => {
     document.getElementById("Profitsol").innerHTML = profit
     document.getElementById("Valuesol").innerHTML = (price*Amountsol).toFixed(0)+"$"
     document.getElementById("Percentsol").innerHTML = "<u>"+((((price*Amountsol)*100)/Investsol)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowsol").innerHTML = '4.2'.fontcolor("grey")
 })
 }
 const getshib = async () => {
@@ -863,7 +872,6 @@ const getshib = async () => {
     document.getElementById("Profitshib").innerHTML = profit
     document.getElementById("Valueshib").innerHTML = (price*Amountshib).toFixed(0)+"$"
     document.getElementById("Percentshib").innerHTML = "<u>"+((((price*Amountshib)*100)/Investshib)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowshib").innerHTML = '0.0000035'.fontcolor("grey")
 })
 }
 const getada = async () => {
@@ -888,7 +896,6 @@ const getada = async () => {
     document.getElementById("Profitada").innerHTML = profit
     document.getElementById("Valueada").innerHTML = (price*Amountada).toFixed(0)+"$"
     document.getElementById("Percentada").innerHTML = "<u>"+((((price*Amountada)*100)/Investada)-100||0).toFixed(0)+"%</u>"
-    document.getElementById("lowada").innerHTML = '0.1859'.fontcolor("grey")
 })
 }
 const getpaxg = async () => {
@@ -1270,7 +1277,7 @@ function technical(){
   
 requests=new Array(cryptoCoin.length);
 for (let i = 0; i < cryptoCoin.length; i++) {
-    var url = "https://api.binance.com/api/v3/klines?symbol=" + cryptoCoin[i] +'BUSD&interval=1d&limit=' + 27
+    var url = "https://api.binance.com/api/v3/klines?symbol=" + cryptoCoin[i] +'BUSD&interval=1d&limit=' + 56
     requests[i] = new XMLHttpRequest();
     requests[i].open("GET", url);
     requests[i].onload = function() {
@@ -1301,12 +1308,65 @@ close23 = Number(result[22][4])
 close24 = Number(result[23][4])
 close25 = Number(result[24][4])
 close26 = Number(result[25][4])
+close27 = Number(result[26][4])
+close28 = Number(result[27][4])
+close29 = Number(result[28][4])
+close30 = Number(result[29][4])
+close31 = Number(result[30][4])
+close32 = Number(result[31][4])
+close33 = Number(result[32][4])
+close34 = Number(result[33][4])
+close35 = Number(result[34][4])
+close36 = Number(result[35][4])
+close37 = Number(result[36][4])
+close38 = Number(result[37][4])
+close39 = Number(result[38][4])
+close40 = Number(result[39][4])
+close41 = Number(result[40][4])
+close42 = Number(result[41][4])
+close43 = Number(result[42][4])
+close44 = Number(result[43][4])
+close45 = Number(result[44][4])
+close46 = Number(result[45][4])
+close47 = Number(result[46][4])
+close48 = Number(result[47][4])
+close49 = Number(result[48][4])
+close50 = Number(result[49][4])
+close51 = Number(result[50][4])
+close52 = Number(result[51][4])
+close53 = Number(result[52][4])
+close54 = Number(result[53][4])
+close55 = Number(result[54][4])
 
-        sma12 = (close26 + close25 + close24 + close23 + close22 + close21 + close20 + close19 + close18 + close17 + close16 + close15)/12
-        sma26 = (close26 + close25 + close24 + close23 + close22 + close21 + close20 + close19 + close18 + close17 + close16 + close15 + close14 + close13 + close12 + close11 + close10 + close9 + close8 + close7 + close6 + close5 + close4 + close3 + close2 + close1)/26
-        ema12 = (Number(result[26][4])*0.3333)+(sma12*(1-0.3333))
-        ema26 = (Number(result[26][4])*0.3333)+(sma26*(1-0.3333))
+        sma3 = (close55+close54+close53)/3
+        sma5 = (close55+close54+close53+close52+close51)/5
+        sma8 = (close55+close54+close53+close52+close51+close50+close49+close48)/8
+        sma10 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46)/10
+        sma12 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44)/12
+        sma15 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41)/15
+        sma26 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41+close40+close39+close38+close37+close36+close35+close34+close33+close32+close31+close30)/26
+        sma30 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41+close40+close39+close38+close37+close36+close35+close34+close33+close32+close31+close30+close29+close28+close27+close26)/30
+        sma35 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41+close40+close39+close38+close37+close36+close35+close34+close33+close32+close31+close30+close29+close28+close27+close26+close25+close24+close23+close22+close21)/35
+        sma40 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41+close40+close39+close38+close37+close36+close35+close34+close33+close32+close31+close30+close29+close28+close27+close26+close25+close24+close23+close22+close21+close20+close19+close18+close17+close16)/40
+        sma45 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41+close40+close39+close38+close37+close36+close35+close34+close33+close32+close31+close30+close29+close28+close27+close26+close25+close24+close23+close22+close21+close20+close19+close18+close17+close16+close15+close14+close13+close12+close11)/45
+        sma50 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41+close40+close39+close38+close37+close36+close35+close34+close33+close32+close31+close30+close29+close28+close27+close26+close25+close24+close23+close22+close21+close20+close19+close18+close17+close16+close15+close14+close13+close12+close11+close10+close9+close8+close7+close6)/50
+        sma55 = (close55+close54+close53+close52+close51+close50+close49+close48+close47+close46+close45+close44+close43+close42+close41+close40+close39+close38+close37+close36+close35+close34+close33+close32+close31+close30+close29+close28+close27+close26+close25+close24+close23+close22+close21+close20+close19+close18+close17+close16+close15+close14+close13+close12+close11+close10+close9+close8+close7+close6+close5+close4+close3+close2+close1)/55
+
+        ema3 = (Number(result[55][4])*0.3333)+(sma3*(1-0.3333))
+        ema5 = (Number(result[55][4])*0.3333)+(sma5*(1-0.3333))
+        ema8 = (Number(result[55][4])*0.3333)+(sma8*(1-0.3333))
+        ema10 = (Number(result[55][4])*0.3333)+(sma10*(1-0.3333))
+        ema12 = (Number(result[55][4])*0.3333)+(sma12*(1-0.3333))
+        ema15 = (Number(result[55][4])*0.3333)+(sma15*(1-0.3333))
+        ema26 = (Number(result[55][4])*0.3333)+(sma26*(1-0.3333))
+        ema30 = (Number(result[55][4])*0.3333)+(sma30*(1-0.3333))
+        ema35 = (Number(result[55][4])*0.3333)+(sma35*(1-0.3333))
+        ema40 = (Number(result[55][4])*0.3333)+(sma40*(1-0.3333))
+        ema45 = (Number(result[55][4])*0.3333)+(sma45*(1-0.3333))
+        ema50 = (Number(result[55][4])*0.3333)+(sma50*(1-0.3333))
+        ema55 = (Number(result[55][4])*0.3333)+(sma55*(1-0.3333))
         macd = (ema12-ema26).toFixed(2)
+        Guppy = ((ema3+ema5+ema8+ema10+ema12+ema15)-(ema30+ema35+ema40+ema45+ema50+ema55)).toFixed(2)
 
         if (macd > 0) {
         document.getElementById("macd"+cryptoCoin[i].toLowerCase()).innerHTML = macd+'[✓]'
@@ -1314,6 +1374,14 @@ close26 = Number(result[25][4])
         } else {
         document.getElementById("macd"+cryptoCoin[i].toLowerCase()).innerHTML = macd+'[X]'
         document.getElementById("macd"+cryptoCoin[i].toLowerCase()).style.color = "red"
+        }
+
+        if (Guppy > 0) {
+        document.getElementById("guppy"+cryptoCoin[i].toLowerCase()).innerHTML = Guppy+'[✓]'
+        document.getElementById("guppy"+cryptoCoin[i].toLowerCase()).style.color = "#16D813"
+        } else {
+        document.getElementById("guppy"+cryptoCoin[i].toLowerCase()).innerHTML = Guppy+'[X]'
+        document.getElementById("guppy"+cryptoCoin[i].toLowerCase()).style.color = "red"
         }
 /////////////////////////////////////////////////////////////////////////////////////////////////////คำนวณ RSI ตลาดหมี-กระทิง
 function calculateUptrend(closingPrices, maPeriod, rsiPeriod) {
@@ -1352,8 +1420,8 @@ function calculateRSI(closingPrices, period) {
   return rsi
 }
 const closingPrices = [
-close1, close2, close3, close4, close5, close5, close7, close8, close9, close10,
-close11, close12, close13, close14, close15, close16, close17, close18, close19, close20, close21, close22, close23, close24, close25
+close31, close32, close33, close34, close35, close36, close37, close38, close39, close40,
+close41, close42, close43, close44, close45, close46, close47, close48, close49, close50, close51, close52, close53, close54, close55
 ]
 const maPeriod = 25
 const rsiPeriod = 25
