@@ -736,7 +736,7 @@ const getxec = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=XECBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(6)
+    price = Number(data.askPrice).toFixed(7)
     document.getElementById("getxec").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("xecpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -760,7 +760,7 @@ const getlunc = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=LUNCBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(5)
+    price = Number(data.askPrice).toFixed(6)
     document.getElementById("getlunc").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("luncpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -784,7 +784,7 @@ const getdoge = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=DOGEBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(2)
+    price = Number(data.askPrice).toFixed(4)
     document.getElementById("getdoge").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("dogepercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -808,7 +808,7 @@ const getxrp = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=XRPBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(2)
+    price = Number(data.askPrice).toFixed(3)
     document.getElementById("getxrp").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("xrppercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -856,7 +856,7 @@ const getshib = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=SHIBBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(6)
+    price = Number(data.askPrice).toFixed(7)
     document.getElementById("getshib").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("shibpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -929,7 +929,7 @@ const getvet = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=VETBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(2)
+    price = Number(data.askPrice).toFixed(4)
     document.getElementById("getvet").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("vetpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -1396,24 +1396,24 @@ function calculateUptrend(closingPrices, maPeriod, rsiPeriod) {
   } else {
     document.getElementById("rsi"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+ (rsi.toFixed(0)).fontcolor("orange") +'</center>'
   }
-  const uptrend = (ma > 0) && (rsi > 50);
-  return uptrend;
+  const uptrend = (ma > 0) && (rsi > 50)
+  return uptrend
 }
 function calculateMA(closingPrices, period) {
   let sum = 0
   for (let i = 0; i < period; i++) {
     sum += closingPrices[i]
   }
-  const ma = sum / period;
+  const ma = sum / period
   return ma
 }
 function calculateRSI(closingPrices, period) {
-  let avgUpwardChange = 0;
+  let avgUpwardChange = 0
   for (let i = 1; i < closingPrices.length; i++) {
     avgUpwardChange += Math.max(0, closingPrices[i] - closingPrices[i - 1])
   }
   avgUpwardChange /= closingPrices.length;
-  let avgDownwardChange = 0;
+  let avgDownwardChange = 0
   for (let i = 1; i < closingPrices.length; i++) {
     avgDownwardChange += Math.max(0, closingPrices[i - 1] - closingPrices[i])
   }
@@ -1427,7 +1427,7 @@ close41, close42, close43, close44, close45, close46, close47, close48, close49,
 ]
 const maPeriod = 25
 const rsiPeriod = 25
-const uptrend = calculateUptrend(closingPrices, maPeriod, rsiPeriod);
+const uptrend = calculateUptrend(closingPrices, maPeriod, rsiPeriod)
 if (uptrend === true){
 
   document.getElementById("market"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+'ขาขึ้น'.fontcolor("#108F3A")+'</center>'
