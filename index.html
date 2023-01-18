@@ -1430,9 +1430,9 @@ const rsiPeriod = 25
 const uptrend = calculateUptrend(closingPrices, maPeriod, rsiPeriod);
 if (uptrend === true){
 
-  document.getElementById("market"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+'ขาขึ้น'.fontcolor("#108F3A")+'</center>'
+  document.getElementById("market"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+'ขาขึ้น[✓]'.fontcolor("#108F3A")+'</center>'
 } else if (uptrend === false){
-  document.getElementById("market"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+'ขาลง'.fontcolor("red")+'</center>'
+  document.getElementById("market"+cryptoCoin[i].toLowerCase()).innerHTML = '<center>'+'ขาลง[X]'.fontcolor("red")+'</center>'
 }
 }
     requests[i].send()
