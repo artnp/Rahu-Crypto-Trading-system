@@ -87,7 +87,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
     <th scope="col">MACD</th>
     <th scope="col">RSI</th>
     <th scope="col">Price</th>
-    <th scope="col">Bottom</th>
     <th scope="col">24hr</th>
     <th scope="col">Amount</th>
 	  <th scope="col">Invest</th>
@@ -109,7 +108,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macdbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="rsibtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="getbtc"></div><span class="details">BTC</span></td>
-      <td class="has-details"><div id="lowbtc"></div><span class="details">BTC</span></td>
       <td class="has-details"><div id="btcpercent"></div><span class="details">BTC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountbtc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investbtc" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -129,7 +127,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macddot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="rsidot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="getdot"></div><span class="details">DOT</span></td>
-      <td class="has-details"><div id="lowdot"></div><span class="details">DOT</span></td>
       <td class="has-details"><div id="dotpercent"></div><span class="details">DOT</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountdot" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdot" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -149,7 +146,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macdeth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="rsieth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="geteth"></div><span class="details">ETH</span></td>
-      <td class="has-details"><div id="loweth"></div><span class="details">ETH</span></td>
       <td class="has-details"><div id="ethpercent"></div><span class="details">ETH</span></td>
       <td><input type="text" onFocus="this.select()" id="Amounteth" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investeth" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -169,7 +165,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macduni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="rsiuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="getuni"></div><span class="details">UNI</span></td>
-      <td class="has-details"><div id="lowuni"></div><span class="details">UNI</span></td>
       <td class="has-details"><div id="unipercent"></div><span class="details">UNI</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountuni" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investuni" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -189,7 +184,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macdxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="rsixec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="getxec"></div><span class="details">XEC</span></td>
-      <td class="has-details"><div id="lowxec"></div><span class="details">XEC</span></td>
       <td class="has-details"><div id="xecpercent"></div><span class="details">XEC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountxec" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxec" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -208,7 +202,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macdlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="rsilunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="getlunc"></div><span class="details">LUNC</span></td>
-      <td class="has-details"><div id="lowlunc"></div><span class="details">LUNC</span></td>
       <td class="has-details"><div id="luncpercent"></div><span class="details">LUNC</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountlunc" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investlunc" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -227,7 +220,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macddoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="rsidoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="getdoge"></div><span class="details">DOGE</span></td>
-      <td class="has-details"><div id="lowdoge"></div><span class="details">DOGE</span></td>
       <td class="has-details"><div id="dogepercent"></div><span class="details">DOGE</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountdoge" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investdoge" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -246,7 +238,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macdxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="rsixrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="getxrp"></div><span class="details">XRP</span></td>
-      <td class="has-details"><div id="lowxrp"></div><span class="details">XRP</span></td>
       <td class="has-details"><div id="xrppercent"></div><span class="details">XRP</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountxrp" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investxrp" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -265,7 +256,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
       <td class="has-details"><div id="macdsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="rsisol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="getsol"></div><span class="details">SOL</span></td>
-      <td class="has-details"><div id="lowsol"></div><span class="details">SOL</span></td>
       <td class="has-details"><div id="solpercent"></div><span class="details">SOL</span></td>
       <td><input type="text" onFocus="this.select()" id="Amountsol" style="font-size:8pt;height:20px;width:120px;"></td>
 	    <td><input type="text" onFocus="this.select()" id="Investsol" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -284,7 +274,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
     <td class="has-details"><div id="macdshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="rsishib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="getshib"></div><span class="details">SHIB</span></td>
-    <td class="has-details"><div id="lowshib"></div><span class="details">SHIB</span></td>
     <td class="has-details"><div id="shibpercent"></div><span class="details">SHIB</span></td>
     <td><input type="text" onFocus="this.select()" id="Amountshib" style="font-size:8pt;height:20px;width:120px;"></td>
     <td><input type="text" onFocus="this.select()" id="Investshib" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -303,7 +292,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><div id="macdada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="rsiada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="getada"></div><span class="details">ADA</span></td>
-  <td class="has-details"><div id="lowada"></div><span class="details">ADA</span></td>
   <td class="has-details"><div id="adapercent"></div><span class="details">ADA</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountada" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investada" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -322,7 +310,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><div id="macdvet"></div><span class="details">VET</span></td>
   <td class="has-details"><div id="rsivet"></div><span class="details">VET</span></td>
   <td class="has-details"><div id="getvet"></div><span class="details">VET</span></td>
-  <td class="has-details"><div id="lowvet"><center>-</center></div><span class="details">VET</span></td>
   <td class="has-details"><div id="vetpercent"></div><span class="details">VET</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountvet" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investvet" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -341,7 +328,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><div id="macdbnb"></div><span class="details">BNB</span></td>
   <td class="has-details"><div id="rsibnb"></div><span class="details">BNB</span></td>
   <td class="has-details"><div id="getbnb"></div><span class="details">BNB</span></td>
-  <td class="has-details"><div id="lowbnb"><center>-</center></div><span class="details">BNB</span></td>
   <td class="has-details"><div id="bnbpercent"></div><span class="details">BNB</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountbnb" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investbnb" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -360,7 +346,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><div id="macdltc"></div><span class="details">LTC</span></td>
   <td class="has-details"><div id="rsiltc"></div><span class="details">LTC</span></td>
   <td class="has-details"><div id="getltc"></div><span class="details">LTC</span></td>
-  <td class="has-details"><div id="lowltc"><center>-</center></div><span class="details">LTC</span></td>
   <td class="has-details"><div id="ltcpercent"></div><span class="details">LTC</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountltc" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investltc" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -379,7 +364,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
   <td class="has-details"><div id="macdavax"></div><span class="details">AVAX</span></td>
   <td class="has-details"><div id="rsiavax"></div><span class="details">AVAX</span></td>
   <td class="has-details"><div id="getavax"></div><span class="details">AVAX</span></td>
-  <td class="has-details"><div id="lowavax"><center>-</center></div><span class="details">AVAX</span></td>
   <td class="has-details"><div id="avaxpercent"></div><span class="details">AVAX</span></td>
   <td><input type="text" onFocus="this.select()" id="Amountavax" style="font-size:8pt;height:20px;width:120px;"></td>
   <td><input type="text" onFocus="this.select()" id="Investavax" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -398,7 +382,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
 <td class="has-details"><div id="macdapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="rsiapt"></div><span class="details">APT</span></td>
 <td class="has-details"><div id="getapt"></div><span class="details">APT</span></td>
-<td class="has-details"><div id="lowapt"><center>-</center></div><span class="details">APT</span></td>
 <td class="has-details"><div id="aptpercent"></div><span class="details">APT</span></td>
 <td><input type="text" onFocus="this.select()" id="Amountapt" style="font-size:8pt;height:20px;width:120px;"></td>
 <td><input type="text" onFocus="this.select()" id="Investapt" style="font-size:8pt;height:20px;width:70px;"></td>
@@ -417,7 +400,6 @@ onclick="window.open('https://www.binance.com/en/my/wallet/account/earn','popup'
 <td class="has-details"><div id="macdop"></div><span class="details">OP</span></td>
 <td class="has-details"><div id="rsiop"></div><span class="details">OP</span></td>
 <td class="has-details"><div id="getop"></div><span class="details">OP</span></td>
-<td class="has-details"><div id="lowop"><center>-</center></div><span class="details">OP</span></td>
 <td class="has-details"><div id="oppercent"></div><span class="details">OP</span></td>
 <td><input type="text" onFocus="this.select()" id="Amountop" style="font-size:8pt;height:20px;width:120px;"></td>
 <td><input type="text" onFocus="this.select()" id="Investop" style="font-size:8pt;height:20px;width:70px;"></td>
